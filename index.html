@@ -643,6 +643,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
   .stats-ticker .ticker-track{animation:none}
 }
 </style>
+
 </head>
 <body>
 
@@ -662,7 +663,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
       <li><a href="#work">Results</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
-    <a href="#contact" class="btn btn-primary">Get a Free Audit</a>
+    <a href="/contact" class="btn btn-primary">Get a Free Audit</a>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -673,7 +674,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
   <a href="#ecosystem">Services</a>
   <a href="#work">Results</a>
   <a href="#faq">FAQ</a>
-  <a href="#contact" style="color:var(--orange)">Get a Free Audit →</a>
+  <a href="/contact" style="color:var(--orange)">Get a Free Audit →</a>
 </div>
 
 <main>
@@ -691,7 +692,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
       </h1>
       <p>Websites, social media, SEO and performance marketing that turn local searches into enquiries, bookings and walk-ins.</p>
       <div class="hero-ctas">
-        <a href="#contact" class="btn btn-primary">Get My Free Audit <span class="arr">→</span></a>
+        <a href="/contact" class="btn btn-primary">Get My Free Audit <span class="arr">→</span></a>
         <a href="#work" class="btn btn-glass">See Client Results <span class="arr">→</span></a>
       </div>
       <div class="hero-announce"><span class="dot"></span>Already serving the USA and UAE. Now, we're in <em>Australia</em> too.</div>
@@ -802,21 +803,21 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
           <h3>Websites That <span>Convert</span></h3>
           <p>Fast, mobile-first websites built to turn visitors into enquiries.</p>
           <ul><li>Design</li><li>Development</li><li>Landing Pages</li><li>CRO</li></ul>
-          <a href="#contact" class="eco-link">Talk to us <span class="arr">→</span></a>
+          <a href="/contact" class="eco-link">Talk to us <span class="arr">→</span></a>
         </div>
         <div class="eco-card rev rev-d1">
           <div class="kicker">We Build</div>
           <h3>Local <span>Visibility</span></h3>
           <p>SEO, AEO and GEO — show up wherever your customers search or ask.</p>
           <ul><li>SEO</li><li>AEO</li><li>GEO</li><li>Google Business Profile</li></ul>
-          <a href="#contact" class="eco-link">Talk to us <span class="arr">→</span></a>
+          <a href="/contact" class="eco-link">Talk to us <span class="arr">→</span></a>
         </div>
         <div class="eco-card rev rev-d2">
           <div class="kicker">We Build</div>
           <h3>Social &amp; <span>Ads</span></h3>
           <p>Social media and paid campaigns that bring bookings, not just likes.</p>
           <ul><li>Meta Ads</li><li>Google Ads</li><li>Social Media</li><li>Content</li></ul>
-          <a href="#contact" class="eco-link">Talk to us <span class="arr">→</span></a>
+          <a href="/contact" class="eco-link">Talk to us <span class="arr">→</span></a>
         </div>
       </div>
     </div>
@@ -860,7 +861,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
             <li>Ads and SEO built for your local market</li>
             <li>You leave with a steady enquiry engine</li>
           </ul>
-          <a href="#contact" class="btn btn-glass">Get more enquiries <span class="arr">→</span></a>
+          <a href="/contact" class="btn btn-glass">Get more enquiries <span class="arr">→</span></a>
         </div>
         <div class="way rev rev-d1">
           <div class="tag">B — Start with presence</div>
@@ -870,7 +871,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
             <li>A website built to convert local visitors</li>
             <li>You leave ranking where customers search</li>
           </ul>
-          <a href="#contact" class="btn btn-glass">Fix my presence <span class="arr">→</span></a>
+          <a href="/contact" class="btn btn-glass">Fix my presence <span class="arr">→</span></a>
         </div>
       </div>
     </div>
@@ -1002,8 +1003,11 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
       <div class="rev">
         <h2>Your next customer is<br>searching <span class="grad-text">right now.</span></h2>
         <p>Tell us your business. We'll show you exactly where the growth is.</p>
-        <a href="mailto:hello@per4mance.guru" class="btn btn-primary">Get My Free Growth Audit <span class="arr">→</span></a>
+        <a href="/contact" class="btn btn-primary">Get My Free Growth Audit <span class="arr">→</span></a>
       </div>
+
+      
+
     </div>
   </section>
 
@@ -1027,7 +1031,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
         <h4>Company</h4>
         <a href="#work">Results</a>
         <a href="#loop">How We Work</a>
-        <a href="#contact">Contact</a>
+        <a href="/contact">Contact</a>
       </div>
       <div class="foot-col">
         <h4>Connect</h4>
@@ -1146,7 +1150,7 @@ document.querySelectorAll('.case').forEach(card => {
   overlay.innerHTML =
     '<div class="portfolio-metric-label">' + label + '</div>' +
     '<div class="portfolio-metric-val">' + val + '</div>' +
-    '<a class="portfolio-view-btn" href="#contact">View <span>→</span></a>' +
+    '<a class="portfolio-view-btn" href="/contact">View <span>→</span></a>' +
     '<div class="portfolio-brand">' + niche + ' →</div>';
   card.appendChild(overlay);
 });
@@ -1243,5 +1247,7 @@ addEventListener('orientationchange', ()=>{clearTimeout(flowT); flowT=setTimeout
 setTimeout(buildEngineFlow, 600);
 window.addEventListener('load', buildEngineFlow);
 </script>
+
+
 </body>
 </html>
