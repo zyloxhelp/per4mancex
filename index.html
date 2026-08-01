@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PER4MANCE X | Real Estate Marketing Agency Australia</title>
+<meta name="description" content="Performance media, property creative and lead generation systems for Australian property developers, project marketers and real estate agencies.">
+<link rel="canonical" href="https://per4mancex.com/">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+<!-- Open Graph -->
+<meta property="og:title" content="PER4MANCE X | Real Estate Marketing Agency Australia">
+<meta property="og:description" content="Performance media, property creative and lead generation systems for Australian property developers, project marketers and real estate agencies.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://per4mancex.com/">
+<meta property="og:image" content="https://per4mancex.com/assets/img/logo-wordmark.png">
+<meta property="og:locale" content="en_AU">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PER4MANCE X | Real Estate Marketing Agency Australia">
+<meta name="twitter:description" content="Performance media, property creative and lead generation systems for Australian property developers, project marketers and real estate agencies.">
+<meta name="twitter:image" content="https://per4mancex.com/assets/img/logo-wordmark.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400..700&family=Inter:wght@400..700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/main.css">
+<script>document.documentElement.classList.add("js");</script>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "PER4MANCE X",
+  "url": "https://per4mancex.com/",
+  "logo": "https://per4mancex.com/assets/img/logo-wordmark.png",
+  "description": "Performance marketing, property creative and lead generation systems for Australian real estate brands.",
+  "areaServed": "AU",
+  "slogan": "Property Marketing. Built to Perform."
+}
+</script>
+</head>
+<body>
+
+<!-- ================================================== -->
+<!-- INTRO X ANIMATION (plays once per browser session) -->
+<!-- ================================================== -->
+<div class="intro" id="intro" aria-hidden="true">
+  <svg class="intro__mask-svg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" viewBox="0 0 1000 1000">
+    <defs>
+      <mask id="introXMask">
+        <rect width="1000" height="1000" fill="#fff"/>
+        <g id="introXHole" fill="#000" transform="translate(500 500) scale(0)">
+          <rect x="-400" y="-60" width="800" height="120" transform="rotate(45)"/>
+          <rect x="-400" y="-60" width="800" height="120" transform="rotate(-45)"/>
+        </g>
+      </mask>
+    </defs>
+    <rect class="intro__panel" width="1000" height="1000" fill="#050505" mask="url(#introXMask)"/>
+  </svg>
+  <div class="intro__lines">
+    <span class="intro__line intro__line--a"></span>
+    <span class="intro__line intro__line--b"></span>
+  </div>
+</div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" aria-hidden="true"><span id="scrollProgressBar"></span></div>
+
+<!-- Red X cursor follower (desktop only) -->
+<div class="cursor-x" id="cursorX" aria-hidden="true">
+  <svg viewBox="0 0 24 24" fill="none"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+</div>
+
+<!-- ================================================== -->
+<!-- GLASS HEADER -->
+<!-- ================================================== -->
+<header class="header" id="siteHeader">
+  <div class="header__inner">
+    <a href="#home" class="header__brand" aria-label="PER4MANCE X — back to top">
+      <!-- Official wordmark logo — swap assets/img/logo-wordmark.png to update everywhere. -->
+      <img src="assets/img/logo-wordmark.png" alt="PER4MANCE X logo" class="header__logo" width="1306" height="170">
+    </a>
+    <nav class="header__nav" aria-label="Primary">
+      <ul>
+        <li><a href="#home" class="nav-link is-active">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#approach" class="nav-link">Approach</a></li>
+        <li><a href="#work" class="nav-link">Work</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="btn btn--primary btn--sm header__cta" data-magnetic>
+      <span class="btn__label">Book a Strategy Call</span>
+      <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+    </a>
+    <button class="header__burger" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile navigation overlay -->
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <svg class="mobile-nav__x" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 3l18 18M21 3L3 21" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+  <nav aria-label="Mobile">
+    <ul>
+      <li style="--i:0"><a href="#home" class="mobile-nav__link">Home</a></li>
+      <li style="--i:1"><a href="#services" class="mobile-nav__link">Services</a></li>
+      <li style="--i:2"><a href="#approach" class="mobile-nav__link">Approach</a></li>
+      <li style="--i:3"><a href="#work" class="mobile-nav__link">Work</a></li>
+      <li style="--i:4"><a href="#about" class="mobile-nav__link">About</a></li>
+      <li style="--i:5"><a href="#contact" class="mobile-nav__link">Contact</a></li>
+    </ul>
+  </nav>
+  <a href="#contact" class="btn btn--primary btn--block mobile-nav__cta">
+    <span class="btn__label">Book a Strategy Call</span>
+    <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+  </a>
+</div>
+
+<main id="main">
+
+<!-- ================================================== -->
+<!-- SECTION 1: HERO -->
+<!-- ================================================== -->
+<section class="hero section--light" id="home">
+  <div class="container">
+    <div class="hero__grid">
+      <div class="hero__content">
+        <p class="section-label reveal" style="--i:0"><span class="section-label__dot" aria-hidden="true"></span>Property Marketing, Built to Perform</p>
+        <h1 class="hero-heading split-reveal">Move More Property With Smarter&nbsp;Marketing.</h1>
+        <p class="hero__copy reveal" style="--i:2">PER4MANCE X combines paid media, property creative and conversion systems to help Australian real estate brands generate qualified enquiries and move buyers from interest to action.</p>
+        <div class="hero__ctas reveal" style="--i:3">
+          <a href="#contact" class="btn btn--primary" data-magnetic>
+            <span class="btn__label">Book a Strategy Call</span>
+            <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          <a href="#work" class="btn btn--secondary" data-magnetic>
+            <span class="btn__label">View Our Work</span>
+            <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+        <p class="hero__supporting reveal" style="--i:4">Paid Media <span aria-hidden="true">&bull;</span> Property Creative <span aria-hidden="true">&bull;</span> Lead Generation <span aria-hidden="true">&bull;</span> Conversion Systems</p>
+      </div>
+
+      <!-- Hero collage — image sources are editable; swap the src URLs below. -->
+      <div class="hero__visual reveal" id="heroVisual" style="--i:1" aria-hidden="false">
+        <figure class="hero__img hero__img--main img-frame" data-parallax="14">
+          <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=900&auto=format&fit=crop" alt="Modern Australian apartment development facade" loading="eager" fetchpriority="high">
+        </figure>
+        <figure class="hero__img hero__img--secondary img-frame" data-parallax="26">
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=700&auto=format&fit=crop" alt="Professional real estate marketing consultation" loading="eager">
+        </figure>
+        <figure class="hero__img hero__img--tertiary img-frame" data-parallax="38">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=700&auto=format&fit=crop" alt="Paid media campaign dashboard on a laptop" loading="eager">
+        </figure>
+        <span class="hero__deco hero__deco--x" data-parallax="48" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none"><path d="M10 10l44 44M54 10L10 54" stroke="currentColor" stroke-width="7" stroke-linecap="round"/></svg>
+        </span>
+        <span class="hero__deco hero__deco--circle" data-parallax="20" aria-hidden="true"></span>
+        <span class="hero__deco hero__deco--star" data-parallax="34" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6L12 0z"/></svg>
+        </span>
+        <span class="hero__deco hero__deco--dot" data-parallax="42" aria-hidden="true"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== -->
+<!-- SECTION 2: ANIMATED MARQUEE -->
+<!-- ================================================== -->
+<div class="marquee marquee--dark" aria-hidden="true">
+  <div class="marquee__track">
+    <div class="marquee__group">
+      <span>Property Lead Generation</span><i class="marquee__sep">&#10022;</i>
+      <span>Meta Advertising</span><i class="marquee__sep">&#10022;</i>
+      <span>Google Ads</span><i class="marquee__sep">&#10022;</i>
+      <span>Property Creative</span><i class="marquee__sep">&#10022;</i>
+      <span>Project Launches</span><i class="marquee__sep">&#10022;</i>
+      <span>Landing Pages</span><i class="marquee__sep">&#10022;</i>
+      <span>Lead Nurture</span><i class="marquee__sep">&#10022;</i>
+    </div>
+    <div class="marquee__group" aria-hidden="true">
+      <span>Property Lead Generation</span><i class="marquee__sep">&#10022;</i>
+      <span>Meta Advertising</span><i class="marquee__sep">&#10022;</i>
+      <span>Google Ads</span><i class="marquee__sep">&#10022;</i>
+      <span>Property Creative</span><i class="marquee__sep">&#10022;</i>
+      <span>Project Launches</span><i class="marquee__sep">&#10022;</i>
+      <span>Landing Pages</span><i class="marquee__sep">&#10022;</i>
+      <span>Lead Nurture</span><i class="marquee__sep">&#10022;</i>
+    </div>
+  </div>
+</div>
+
+<!-- ================================================== -->
+<!-- SECTION 3: ABOUT -->
+<!-- ================================================== -->
+<section class="about section--light" id="about">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <p class="section-label reveal"><span class="section-label__dot" aria-hidden="true"></span>About PER4MANCE X</p>
+      <h2 class="section-heading split-reveal">Property Growth Powered by Strategy and Performance.</h2>
+    </div>
+
+    <div class="about__grid">
+      <!-- About collage — editable image sources -->
+      <div class="about__visual reveal">
+        <figure class="about__img about__img--a img-frame" data-parallax="12">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop" alt="Contemporary Australian commercial architecture" loading="lazy">
+        </figure>
+        <figure class="about__img about__img--b img-frame" data-parallax="24">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=700&auto=format&fit=crop" alt="Property campaign strategy planning session" loading="lazy">
+        </figure>
+        <span class="about__deco" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none"><path d="M10 10l44 44M54 10L10 54" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></svg>
+        </span>
+      </div>
+
+      <div class="about__content">
+        <p class="about__copy reveal">We help Australian property businesses connect media, creative and conversion into one focused marketing system. Every campaign is shaped around the project, the buyer and the action that matters next.</p>
+        <ul class="capabilities" role="list">
+          <li class="capability reveal" style="--i:0">
+            <div class="capability__head"><span>Campaign Strategy</span><i class="capability__x" aria-hidden="true">&#10005;</i></div>
+            <div class="capability__track"><span class="capability__bar" style="--fill:92%"></span></div>
+          </li>
+          <li class="capability reveal" style="--i:1">
+            <div class="capability__head"><span>Paid Media</span><i class="capability__x" aria-hidden="true">&#10005;</i></div>
+            <div class="capability__track"><span class="capability__bar" style="--fill:88%"></span></div>
+          </li>
+          <li class="capability reveal" style="--i:2">
+            <div class="capability__head"><span>Property Creative</span><i class="capability__x" aria-hidden="true">&#10005;</i></div>
+            <div class="capability__track"><span class="capability__bar" style="--fill:84%"></span></div>
+          </li>
+          <li class="capability reveal" style="--i:3">
+            <div class="capability__head"><span>Conversion Systems</span><i class="capability__x" aria-hidden="true">&#10005;</i></div>
+            <div class="capability__track"><span class="capability__bar" style="--fill:90%"></span></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="about__cards">
+      <article class="mini-card reveal" style="--i:0">
+        <span class="mini-card__icon" aria-hidden="true">&#10022;</span>
+        <h3>Property Focused</h3>
+        <p>Built specifically around property buyer behaviour.</p>
+      </article>
+      <article class="mini-card reveal" style="--i:1">
+        <span class="mini-card__icon" aria-hidden="true">&#10022;</span>
+        <h3>Performance Led</h3>
+        <p>Decisions guided by data, testing and campaign quality.</p>
+      </article>
+      <article class="mini-card reveal" style="--i:2">
+        <span class="mini-card__icon" aria-hidden="true">&#10022;</span>
+        <h3>Creative Connected</h3>
+        <p>Media and creative developed as one campaign system.</p>
+      </article>
+      <article class="mini-card reveal" style="--i:3">
+        <span class="mini-card__icon" aria-hidden="true">&#10022;</span>
+        <h3>Conversion Driven</h3>
+        <p>Every step designed to support meaningful enquiries.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== -->
+<!-- SECTION 4: SERVICES -->
+<!-- ================================================== -->
+<section class="services section--dark" id="services">
+  <div class="container">
+    <div class="section-head section-head--split">
+      <div>
+        <p class="section-label section-label--dark reveal"><span class="section-label__dot" aria-hidden="true"></span>Our Services</p>
+        <h2 class="section-heading split-reveal">Everything Your Property Campaign Needs to Move.</h2>
+      </div>
+      <a href="#contact" class="btn btn--ghost-light reveal" data-magnetic>
+        <span class="btn__label">View All Services</span>
+        <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+
+    <div class="services__grid">
+      <article class="service-card reveal" style="--i:0">
+        <span class="service-card__num">01</span>
+        <figure class="service-card__img img-frame">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=700&auto=format&fit=crop" alt="Performance media dashboard with campaign metrics" loading="lazy">
+        </figure>
+        <h3 class="service-card__title">Paid Media</h3>
+        <p class="service-card__copy">Performance-led Meta and Google campaigns designed to generate qualified property enquiries.</p>
+        <ul class="service-card__list" role="list">
+          <li>Campaign strategy</li>
+          <li>Audience targeting</li>
+          <li>Media buying</li>
+          <li>Testing and optimisation</li>
+        </ul>
+        <a href="#contact" class="service-card__link" aria-label="Enquire about Paid Media"><span aria-hidden="true">&#8599;</span></a>
+        <span class="service-card__xline" aria-hidden="true"></span>
+      </article>
+
+      <article class="service-card service-card--featured reveal" style="--i:1">
+        <span class="service-card__num">02</span>
+        <figure class="service-card__img img-frame">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=700&auto=format&fit=crop" alt="Creative team producing property campaign assets" loading="lazy">
+        </figure>
+        <h3 class="service-card__title">Property Creative</h3>
+        <p class="service-card__copy">Static, motion and video creative built around property positioning and buyer intent.</p>
+        <ul class="service-card__list" role="list">
+          <li>Campaign concepts</li>
+          <li>Social media assets</li>
+          <li>Video advertising</li>
+          <li>Creative testing</li>
+        </ul>
+        <a href="#contact" class="service-card__link" aria-label="Enquire about Property Creative"><span aria-hidden="true">&#8599;</span></a>
+        <span class="service-card__xline" aria-hidden="true"></span>
+      </article>
+
+      <article class="service-card reveal" style="--i:2">
+        <span class="service-card__num">03</span>
+        <figure class="service-card__img img-frame">
+          <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=700&auto=format&fit=crop" alt="New residential apartment project ready for launch" loading="lazy">
+        </figure>
+        <h3 class="service-card__title">Project Launch Systems</h3>
+        <p class="service-card__copy">Connected marketing systems for residential, commercial and off-the-plan property launches.</p>
+        <ul class="service-card__list" role="list">
+          <li>Launch strategy</li>
+          <li>Landing pages</li>
+          <li>Lead journeys</li>
+          <li>Campaign reporting</li>
+        </ul>
+        <a href="#contact" class="service-card__link" aria-label="Enquire about Project Launch Systems"><span aria-hidden="true">&#8599;</span></a>
+        <span class="service-card__xline" aria-hidden="true"></span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== -->
+<!-- SECTION 5: WHY CHOOSE US -->
+<!-- ================================================== -->
+<section class="why section--offwhite" id="why">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <p class="section-label reveal"><span class="section-label__dot" aria-hidden="true"></span>Why PER4MANCE X</p>
+      <h2 class="section-heading split-reveal">Why Property Brands Choose a Different Approach.</h2>
+    </div>
+
+    <div class="why__grid">
+      <figure class="why__visual img-frame reveal">
+        <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=900&auto=format&fit=crop" alt="Premium modern residential architecture in monochrome" loading="lazy">
+        <span class="why__deco" aria-hidden="true"></span>
+      </figure>
+      <div class="why__features">
+        <article class="feature-card reveal" style="--i:0">
+          <span class="feature-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1v-9z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Built for Property</h3>
+          <p>Campaign strategy shaped around location, buyer intent, project stage and sales objectives.</p>
+        </article>
+        <article class="feature-card reveal" style="--i:1">
+          <span class="feature-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h7v7H4zM13 13h7v7h-7zM13 4h7v7h-7zM4 13h7v7H4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Media and Creative Together</h3>
+          <p>Creative and paid media work as one connected system rather than separate services.</p>
+        </article>
+        <article class="feature-card reveal" style="--i:2">
+          <span class="feature-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Quality Over Vanity Metrics</h3>
+          <p>We focus on meaningful buyer actions and lead quality, not impressions alone.</p>
+        </article>
+        <article class="feature-card reveal" style="--i:3">
+          <span class="feature-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Clear Campaign Visibility</h3>
+          <p>Structured reporting makes campaign performance easier to understand and act on.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Marquee 2 -->
+<div class="marquee marquee--dark" aria-hidden="true">
+  <div class="marquee__track">
+    <div class="marquee__group">
+      <span>Strategy</span><i class="marquee__sep">&#10022;</i>
+      <span>Creative</span><i class="marquee__sep">&#10022;</i>
+      <span>Media</span><i class="marquee__sep">&#10022;</i>
+      <span>Enquiries</span><i class="marquee__sep">&#10022;</i>
+      <span>Optimisation</span><i class="marquee__sep">&#10022;</i>
+      <span>Growth</span><i class="marquee__sep">&#10022;</i>
+    </div>
+    <div class="marquee__group" aria-hidden="true">
+      <span>Strategy</span><i class="marquee__sep">&#10022;</i>
+      <span>Creative</span><i class="marquee__sep">&#10022;</i>
+      <span>Media</span><i class="marquee__sep">&#10022;</i>
+      <span>Enquiries</span><i class="marquee__sep">&#10022;</i>
+      <span>Optimisation</span><i class="marquee__sep">&#10022;</i>
+      <span>Growth</span><i class="marquee__sep">&#10022;</i>
+    </div>
+    <div class="marquee__group" aria-hidden="true">
+      <span>Strategy</span><i class="marquee__sep">&#10022;</i>
+      <span>Creative</span><i class="marquee__sep">&#10022;</i>
+      <span>Media</span><i class="marquee__sep">&#10022;</i>
+      <span>Enquiries</span><i class="marquee__sep">&#10022;</i>
+      <span>Optimisation</span><i class="marquee__sep">&#10022;</i>
+      <span>Growth</span><i class="marquee__sep">&#10022;</i>
+    </div>
+    <div class="marquee__group" aria-hidden="true">
+      <span>Strategy</span><i class="marquee__sep">&#10022;</i>
+      <span>Creative</span><i class="marquee__sep">&#10022;</i>
+      <span>Media</span><i class="marquee__sep">&#10022;</i>
+      <span>Enquiries</span><i class="marquee__sep">&#10022;</i>
+      <span>Optimisation</span><i class="marquee__sep">&#10022;</i>
+      <span>Growth</span><i class="marquee__sep">&#10022;</i>
+    </div>
+  </div>
+</div>
+
+<!-- ================================================== -->
+<!-- SECTION 6: PROCESS -->
+<!-- ================================================== -->
+<section class="process section--light" id="approach">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <p class="section-label reveal"><span class="section-label__dot" aria-hidden="true"></span>Our Process</p>
+      <h2 class="section-heading split-reveal">A Clear System From Brief to Buyer Enquiry.</h2>
+    </div>
+
+    <div class="process__line" aria-hidden="true"><span id="processProgress"></span></div>
+
+    <ol class="process__grid" role="list">
+      <li class="process-card reveal" style="--i:0">
+        <span class="process-card__num">01</span>
+        <h3 class="process-card__title">Discover and Position</h3>
+        <p class="process-card__copy">We understand the project, location, audience, offer and commercial objective before building the campaign.</p>
+        <ul class="process-card__list" role="list">
+          <li>Project discovery</li>
+          <li>Buyer research</li>
+          <li>Positioning</li>
+          <li>Campaign roadmap</li>
+        </ul>
+      </li>
+      <li class="process-card reveal" style="--i:1">
+        <span class="process-card__num">02</span>
+        <h3 class="process-card__title">Create and Launch</h3>
+        <p class="process-card__copy">We develop the creative, media structure and conversion journey required to launch with clarity.</p>
+        <ul class="process-card__list" role="list">
+          <li>Campaign concepts</li>
+          <li>Creative assets</li>
+          <li>Ad account setup</li>
+          <li>Landing page journey</li>
+        </ul>
+      </li>
+      <li class="process-card reveal" style="--i:2">
+        <span class="process-card__num">03</span>
+        <h3 class="process-card__title">Optimise and Scale</h3>
+        <p class="process-card__copy">We review campaign quality, test new angles and optimise towards stronger enquiry outcomes.</p>
+        <ul class="process-card__list" role="list">
+          <li>Creative testing</li>
+          <li>Media optimisation</li>
+          <li>Lead quality review</li>
+          <li>Performance reporting</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================================================== -->
+<!-- SECTION 7: SELECTED WORK -->
+<!-- ================================================== -->
+<section class="work section--offwhite" id="work">
+  <div class="container">
+    <div class="section-head section-head--split">
+      <div>
+        <p class="section-label reveal"><span class="section-label__dot" aria-hidden="true"></span>Selected Work</p>
+        <h2 class="section-heading split-reveal">Property Campaigns Built Around Buyer Action.</h2>
+      </div>
+      <a href="#contact" class="btn btn--secondary reveal" data-magnetic>
+        <span class="btn__label">View All Work</span>
+        <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+
+    <!-- Work grid — case-study content is editable in place. -->
+    <div class="work__grid">
+      <article class="work-card reveal" style="--i:0">
+        <figure class="work-card__media img-frame">
+          <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?q=80&w=900&auto=format&fit=crop" alt="Residential development towers viewed from below" loading="lazy">
+          <span class="work-card__overlay" aria-hidden="true"></span>
+          <span class="work-card__tag">Project Marketing</span>
+          <a href="#contact" class="work-card__arrow" aria-label="Enquire about the Residential Development Launch case study"><span aria-hidden="true">&#8599;</span></a>
+        </figure>
+        <div class="work-card__body">
+          <h3>Residential Development Launch</h3>
+          <p>A connected campaign system for an Australian residential development.</p>
+          <p class="work-card__services">Positioning, paid media, creative and landing page strategy.</p>
+          <span class="work-card__soon">Case Study Details Coming Soon</span>
+        </div>
+      </article>
+
+      <article class="work-card reveal" style="--i:1">
+        <figure class="work-card__media img-frame">
+          <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=900&auto=format&fit=crop" alt="Property purchase enquiry and contract discussion" loading="lazy">
+          <span class="work-card__overlay" aria-hidden="true"></span>
+          <span class="work-card__tag">Paid Media</span>
+          <a href="#contact" class="work-card__arrow" aria-label="Enquire about the Real Estate Lead Generation case study"><span aria-hidden="true">&#8599;</span></a>
+        </figure>
+        <div class="work-card__body">
+          <h3>Real Estate Lead Generation</h3>
+          <p>A performance campaign designed to support consistent qualified enquiries.</p>
+          <p class="work-card__services">Meta Ads, Google Ads and campaign optimisation.</p>
+          <span class="work-card__soon">Case Study Details Coming Soon</span>
+        </div>
+      </article>
+
+      <article class="work-card reveal" style="--i:2">
+        <figure class="work-card__media img-frame">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=900&auto=format&fit=crop" alt="Interior creative shoot for a property brand campaign" loading="lazy">
+          <span class="work-card__overlay" aria-hidden="true"></span>
+          <span class="work-card__tag">Creative Strategy</span>
+          <a href="#contact" class="work-card__arrow" aria-label="Enquire about the Property Brand Campaign case study"><span aria-hidden="true">&#8599;</span></a>
+        </figure>
+        <div class="work-card__body">
+          <h3>Property Brand Campaign</h3>
+          <p>A creative system designed to strengthen project positioning across digital channels.</p>
+          <p class="work-card__services">Campaign concepts, static creative and video advertising.</p>
+          <span class="work-card__soon">Case Study Details Coming Soon</span>
+        </div>
+      </article>
+
+      <article class="work-card reveal" style="--i:3">
+        <figure class="work-card__media img-frame">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=900&auto=format&fit=crop" alt="Commercial property office space campaign imagery" loading="lazy">
+          <span class="work-card__overlay" aria-hidden="true"></span>
+          <span class="work-card__tag">Commercial Property</span>
+          <a href="#contact" class="work-card__arrow" aria-label="Enquire about the Commercial Property Campaign case study"><span aria-hidden="true">&#8599;</span></a>
+        </figure>
+        <div class="work-card__body">
+          <h3>Commercial Property Campaign</h3>
+          <p>A targeted digital campaign designed around location, audience and investment intent.</p>
+          <p class="work-card__services">Media strategy, lead capture and reporting.</p>
+          <span class="work-card__soon">Case Study Details Coming Soon</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== -->
+<!-- SECTION 8: PERFORMANCE PRINCIPLES -->
+<!-- ================================================== -->
+<section class="principles section--dark" id="principles">
+  <span class="principles__x" data-parallax="30" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M3 3l18 18M21 3L3 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  </span>
+  <div class="container">
+    <div class="section-head">
+      <p class="section-label section-label--dark reveal"><span class="section-label__dot" aria-hidden="true"></span>The PER4MANCE X Standard</p>
+      <h2 class="section-heading split-reveal">The Principles Behind Every Campaign.</h2>
+    </div>
+
+    <ol class="principles__list" role="list">
+      <li class="principle reveal" style="--i:0">
+        <span class="principle__num">01</span>
+        <h3 class="principle__title">Property Before Platform</h3>
+        <p class="principle__copy">We begin with the project, audience and sales objective before choosing the media channel.</p>
+        <span class="principle__mark" aria-hidden="true">&#10005;</span>
+      </li>
+      <li class="principle reveal" style="--i:1">
+        <span class="principle__num">02</span>
+        <h3 class="principle__title">Creative Before Scale</h3>
+        <p class="principle__copy">Campaign growth starts with messages and creative that connect with the right buyer.</p>
+        <span class="principle__mark" aria-hidden="true">&#10005;</span>
+      </li>
+      <li class="principle reveal" style="--i:2">
+        <span class="principle__num">03</span>
+        <h3 class="principle__title">Quality Before Volume</h3>
+        <p class="principle__copy">More leads do not automatically create better outcomes. Lead relevance matters.</p>
+        <span class="principle__mark" aria-hidden="true">&#10005;</span>
+      </li>
+      <li class="principle reveal" style="--i:3">
+        <span class="principle__num">04</span>
+        <h3 class="principle__title">Learning Before Assumption</h3>
+        <p class="principle__copy">Every campaign creates insight that informs the next decision.</p>
+        <span class="principle__mark" aria-hidden="true">&#10005;</span>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================================================== -->
+<!-- SECTION 9: CONTACT FORM -->
+<!-- ================================================== -->
+<section class="contact section--light" id="contact">
+  <div class="container">
+    <div class="contact__grid">
+      <div class="contact__form-col">
+        <p class="section-label reveal"><span class="section-label__dot" aria-hidden="true"></span>Contact Us</p>
+        <h2 class="section-heading split-reveal">Let&rsquo;s Talk About Your Next Property Campaign.</h2>
+        <p class="contact__copy reveal">Tell us about your project, business and campaign objective. We will identify where strategy, media and creative can work harder together.</p>
+
+        <!-- Form submission endpoint is a placeholder — connect your CRM / form handler on the action attribute or in assets/js/main.js -->
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="contact-form__row">
+            <div class="field">
+              <label for="cfName">Full Name <span class="field__req" aria-hidden="true">*</span></label>
+              <input type="text" id="cfName" name="name" autocomplete="name" required aria-required="true">
+              <span class="field__error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="cfEmail">Work Email <span class="field__req" aria-hidden="true">*</span></label>
+              <input type="email" id="cfEmail" name="email" autocomplete="email" required aria-required="true">
+              <span class="field__error" aria-live="polite"></span>
+            </div>
+          </div>
+          <div class="contact-form__row">
+            <div class="field">
+              <label for="cfPhone">Phone Number <span class="field__req" aria-hidden="true">*</span></label>
+              <input type="tel" id="cfPhone" name="phone" autocomplete="tel" inputmode="tel" required aria-required="true">
+              <span class="field__error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="cfCompany">Company Name</label>
+              <input type="text" id="cfCompany" name="company" autocomplete="organization">
+              <span class="field__error" aria-live="polite"></span>
+            </div>
+          </div>
+          <div class="contact-form__row">
+            <div class="field">
+              <label for="cfBusinessType">Business Type <span class="field__req" aria-hidden="true">*</span></label>
+              <select id="cfBusinessType" name="businessType" required aria-required="true">
+                <option value="" selected disabled>Select business type</option>
+                <option>Property Developer</option>
+                <option>Project Marketer</option>
+                <option>Real Estate Agency</option>
+                <option>Buyers&rsquo; Agent</option>
+                <option>Commercial Property</option>
+                <option>Other</option>
+              </select>
+              <span class="field__error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="cfLocation">Project Location</label>
+              <input type="text" id="cfLocation" name="location" placeholder="e.g. Melbourne, VIC">
+              <span class="field__error" aria-live="polite"></span>
+            </div>
+          </div>
+          <div class="contact-form__row">
+            <div class="field">
+              <label for="cfService">Service Required <span class="field__req" aria-hidden="true">*</span></label>
+              <select id="cfService" name="service" required aria-required="true">
+                <option value="" selected disabled>Select a service</option>
+                <option>Paid Media</option>
+                <option>Lead Generation</option>
+                <option>Property Creative</option>
+                <option>Project Launch</option>
+                <option>Landing Page</option>
+                <option>Full Campaign System</option>
+              </select>
+              <span class="field__error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="cfBudget">Monthly Media Budget</label>
+              <select id="cfBudget" name="budget">
+                <option value="" selected disabled>Select a budget range</option>
+                <option>Under A$5,000</option>
+                <option>A$5,000&ndash;A$10,000</option>
+                <option>A$10,000&ndash;A$25,000</option>
+                <option>A$25,000+</option>
+                <option>Not Confirmed</option>
+              </select>
+              <span class="field__error" aria-live="polite"></span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="cfDetails">Project Details <span class="field__req" aria-hidden="true">*</span></label>
+            <textarea id="cfDetails" name="details" rows="5" required aria-required="true" placeholder="Tell us about the project, timeline and objective."></textarea>
+            <span class="field__error" aria-live="polite"></span>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block-mobile" data-magnetic>
+            <span class="btn__label">Request a Strategy Call</span>
+            <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+          </button>
+          <p class="contact-form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <!-- Contact collage — editable image sources -->
+      <div class="contact__visual reveal" aria-hidden="false">
+        <figure class="contact__img contact__img--a img-frame" data-parallax="10">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" alt="Modern Australian residential property exterior" loading="lazy">
+        </figure>
+        <figure class="contact__img contact__img--b img-frame" data-parallax="22">
+          <img src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?q=80&w=700&auto=format&fit=crop" alt="Marketing team planning a property campaign" loading="lazy">
+        </figure>
+        <span class="contact__deco" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none"><path d="M10 10l44 44M54 10L10 54" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== -->
+<!-- SECTION 10: TESTIMONIALS -->
+<!-- ================================================== -->
+<section class="testimonials section--offwhite" id="testimonials">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <p class="section-label reveal"><span class="section-label__dot" aria-hidden="true"></span>Client Experience</p>
+      <h2 class="section-heading split-reveal">Trusted Partnerships. Clearer Campaign Thinking.</h2>
+    </div>
+
+    <div class="testimonials__layout reveal">
+      <aside class="testimonials__panel">
+        <span class="testimonials__panel-x" aria-hidden="true">&#10005;</span>
+        <h3>Real Feedback Only</h3>
+        <p>We only publish verified feedback from real client engagements. No invented reviews, ratings or names.</p>
+      </aside>
+
+      <!-- Testimonial slider — populated from the TESTIMONIALS data object in assets/js/main.js.
+           Add real, approved client quotes there; the placeholder below renders until then. -->
+      <div class="testimonial-slider" id="testimonialSlider">
+        <div class="testimonial-slider__viewport" id="testimonialViewport" aria-live="polite"></div>
+        <div class="testimonial-slider__controls">
+          <button class="slider-btn" id="testimonialPrev" aria-label="Previous testimonial"><span aria-hidden="true">&larr;</span></button>
+          <div class="testimonial-slider__dots" id="testimonialDots" role="tablist" aria-label="Testimonial slides"></div>
+          <button class="slider-btn" id="testimonialNext" aria-label="Next testimonial"><span aria-hidden="true">&rarr;</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== -->
+<!-- SECTION 11: TEAM -->
+<!-- ================================================== -->
+<section class="team section--light" id="team">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <p class="section-label reveal"><span class="section-label__dot" aria-hidden="true"></span>Our Team</p>
+      <h2 class="section-heading split-reveal">Strategy, Creative and Performance in One Team.</h2>
+    </div>
+
+    <!-- Team cards — replace the placeholder name, role and portrait per member. -->
+    <div class="team__grid">
+      <article class="team-card reveal" style="--i:0">
+        <div class="team-card__portrait">
+          <span class="team-card__placeholder" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8.2" r="3.6" stroke="currentColor" stroke-width="1.5"/><path d="M4.5 20c1.2-3.6 4.1-5.4 7.5-5.4s6.3 1.8 7.5 5.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </span>
+        </div>
+        <div class="team-card__meta">
+          <h3>Team Member Name</h3>
+          <p>Strategy and Client Growth</p>
+          <a href="#" class="team-card__linkedin" aria-label="LinkedIn profile placeholder">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.5 8.8v10.7H3.1V8.8h3.4zM4.8 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM20.9 13.6v5.9h-3.4v-5.5c0-1.4-.5-2.3-1.7-2.3-.9 0-1.5.6-1.7 1.2-.1.2-.1.6-.1.9v5.7h-3.4V8.8H14v1.5c.5-.7 1.3-1.7 3.1-1.7 2.3 0 3.8 1.5 3.8 5z"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="team-card reveal" style="--i:1">
+        <div class="team-card__portrait">
+          <span class="team-card__placeholder" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8.2" r="3.6" stroke="currentColor" stroke-width="1.5"/><path d="M4.5 20c1.2-3.6 4.1-5.4 7.5-5.4s6.3 1.8 7.5 5.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </span>
+        </div>
+        <div class="team-card__meta">
+          <h3>Team Member Name</h3>
+          <p>Paid Media and Performance</p>
+          <a href="#" class="team-card__linkedin" aria-label="LinkedIn profile placeholder">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.5 8.8v10.7H3.1V8.8h3.4zM4.8 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM20.9 13.6v5.9h-3.4v-5.5c0-1.4-.5-2.3-1.7-2.3-.9 0-1.5.6-1.7 1.2-.1.2-.1.6-.1.9v5.7h-3.4V8.8H14v1.5c.5-.7 1.3-1.7 3.1-1.7 2.3 0 3.8 1.5 3.8 5z"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="team-card reveal" style="--i:2">
+        <div class="team-card__portrait">
+          <span class="team-card__placeholder" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8.2" r="3.6" stroke="currentColor" stroke-width="1.5"/><path d="M4.5 20c1.2-3.6 4.1-5.4 7.5-5.4s6.3 1.8 7.5 5.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </span>
+        </div>
+        <div class="team-card__meta">
+          <h3>Team Member Name</h3>
+          <p>Creative and Production</p>
+          <a href="#" class="team-card__linkedin" aria-label="LinkedIn profile placeholder">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.5 8.8v10.7H3.1V8.8h3.4zM4.8 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM20.9 13.6v5.9h-3.4v-5.5c0-1.4-.5-2.3-1.7-2.3-.9 0-1.5.6-1.7 1.2-.1.2-.1.6-.1.9v5.7h-3.4V8.8H14v1.5c.5-.7 1.3-1.7 3.1-1.7 2.3 0 3.8 1.5 3.8 5z"/></svg>
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== -->
+<!-- SECTION 12: FINAL CTA -->
+<!-- ================================================== -->
+<section class="final-cta section--deep" id="final-cta">
+  <span class="final-cta__x" data-parallax="40" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M3 3l18 18M21 3L3 21" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+  </span>
+  <div class="container">
+    <h2 class="section-heading section-heading--xl split-reveal">Ready to Move Your Property Marketing Forward?</h2>
+    <p class="final-cta__copy reveal">Build a campaign system that connects the right audience, stronger creative and meaningful buyer action.</p>
+    <div class="final-cta__btns reveal">
+      <a href="#contact" class="btn btn--primary" data-magnetic>
+        <span class="btn__label">Book a Strategy Call</span>
+        <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+      </a>
+      <a href="#services" class="btn btn--ghost-light" data-magnetic>
+        <span class="btn__label">Explore Our Services</span>
+        <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================================================== -->
+<!-- SECTION 13: FOOTER -->
+<!-- ================================================== -->
+<footer class="footer section--deep">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="assets/img/logo-wordmark.png" alt="PER4MANCE X logo" class="footer__logo" width="1306" height="170" loading="lazy">
+        <p class="footer__desc">Performance marketing, property creative and lead generation systems for Australian real estate brands.</p>
+      </div>
+      <nav class="footer__col" aria-label="Footer navigation">
+        <h3>Navigation</h3>
+        <ul role="list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#approach">Approach</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__col" aria-label="Footer services">
+        <h3>Services</h3>
+        <ul role="list">
+          <li><a href="#services">Paid Media</a></li>
+          <li><a href="#services">Property Creative</a></li>
+          <li><a href="#services">Lead Generation</a></li>
+          <li><a href="#services">Project Launch Systems</a></li>
+          <li><a href="#services">Landing Pages</a></li>
+        </ul>
+      </nav>
+      <div class="footer__col">
+        <h3>Contact</h3>
+        <ul role="list">
+          <!-- Replace the placeholders below with real contact details when confirmed. -->
+          <li><a href="#contact">Enquiry Form</a></li>
+          <li><span class="footer__placeholder">Email address coming soon</span></li>
+          <li><span class="footer__placeholder">Phone number coming soon</span></li>
+        </ul>
+        <div class="footer__social">
+          <!-- Replace # with real profile URLs. -->
+          <a href="#" aria-label="PER4MANCE X on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.5 8.8v10.7H3.1V8.8h3.4zM4.8 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM20.9 13.6v5.9h-3.4v-5.5c0-1.4-.5-2.3-1.7-2.3-.9 0-1.5.6-1.7 1.2-.1.2-.1.6-.1.9v5.7h-3.4V8.8H14v1.5c.5-.7 1.3-1.7 3.1-1.7 2.3 0 3.8 1.5 3.8 5z"/></svg>
+          </a>
+          <a href="#" aria-label="PER4MANCE X on Instagram">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.7"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__line">Property Marketing. Built to Perform.</p>
+      <ul class="footer__legal" role="list">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+      <p class="footer__copyright">&copy; <span id="footerYear">2026</span> PER4MANCE X. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
