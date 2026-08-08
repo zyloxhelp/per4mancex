@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en-AU" class="is-loading">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PER4MANCE X | Creative &amp; Performance Marketing Agency</title>
+<meta name="description" content="AI visuals, photography, design, content, branding, web, SEO and performance marketing — a full-service agency built to perform.">
+<link rel="canonical" href="https://per4mancex.com/">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preload" as="image" href="assets/img/logo-x.png">
+
+<!-- Open Graph -->
+<meta property="og:title" content="PER4MANCE X | Creative &amp; Performance Marketing Agency">
+<meta property="og:description" content="AI visuals, photography, design, content, branding, web, SEO and performance marketing — a full-service agency built to perform.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://per4mancex.com/">
+<meta property="og:image" content="https://per4mancex.com/assets/img/logo-wordmark.png">
+<meta property="og:locale" content="en_AU">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PER4MANCE X | Creative &amp; Performance Marketing Agency">
+<meta name="twitter:description" content="AI visuals, photography, design, content, branding, web, SEO and performance marketing — a full-service agency built to perform.">
+<meta name="twitter:image" content="https://per4mancex.com/assets/img/logo-wordmark.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400..700&family=Inter:wght@400..700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/main.css">
+<script>document.documentElement.classList.add("js");</script>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "PER4MANCE X",
+  "url": "https://per4mancex.com/",
+  "logo": "https://per4mancex.com/assets/img/logo-wordmark.png",
+  "description": "A full-service creative and performance marketing agency: AI visuals, photography and videography, design, content, branding, web, SEO and social.",
+  "areaServed": "AU",
+  "slogan": "Built to Perform."
+}
+</script>
+</head>
+<body>
+
+<!-- Official logo mark, rendered from the uploaded artwork (assets/img/logo-x.png) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="blade" viewBox="0 0 100 100">
+      <image href="assets/img/logo-x.png" width="100" height="100" preserveAspectRatio="xMidYMid meet"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ================================================== -->
+<!-- FULL-SCREEN LOGO OPENING (plays on every load) -->
+<!-- ================================================== -->
+<div class="opening" id="opening">
+  <div class="opening__panel opening__panel--t"></div>
+  <div class="opening__panel opening__panel--r"></div>
+  <div class="opening__panel opening__panel--b"></div>
+  <div class="opening__panel opening__panel--l"></div>
+  <button class="opening__enter" id="openingEnter" aria-label="Enter website">
+    <img class="opening__logo" src="assets/img/logo-x.png" alt="" width="800" height="779">
+  </button>
+</div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" aria-hidden="true"><span id="scrollProgressBar"></span></div>
+
+<!-- Logo cursor follower (desktop only) -->
+<div class="logo-cursor" id="logoCursor" aria-hidden="true">
+  <img src="assets/img/logo-x.png" alt="" width="800" height="779">
+</div>
+
+
+<!-- ================================================== -->
+<!-- GLASS HEADER -->
+<!-- ================================================== -->
+<header class="header" id="siteHeader">
+  <div class="header__inner">
+    <a href="#home" class="header__brand" aria-label="PER4MANCE X — back to top">
+      <!-- Official wordmark logo — swap assets/img/logo-wordmark.png to update everywhere. -->
+      <img src="assets/img/logo-wordmark.png" alt="PER4MANCE X logo" class="header__logo" width="1400" height="244">
+    </a>
+    <nav class="header__nav" aria-label="Primary">
+      <ul>
+        <li><a href="#home" class="nav-link is-active">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#approach" class="nav-link">Approach</a></li>
+      </ul>
+    </nav>
+    <a href="https://wa.me/61405177627?text=Hi%20PER4MANCE%20X%2C%20I%27d%20like%20to%20book%20a%20discovery%20call." target="_blank" rel="noopener" class="btn btn--primary btn--sm header__cta" data-magnetic>
+      <span class="btn__label">Book a Discovery Call</span>
+      <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+    </a>
+    <button class="header__burger" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile navigation overlay -->
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <svg class="mobile-nav__x" viewBox="0 0 100 100" aria-hidden="true"><use href="#blade"/></svg>
+  <nav aria-label="Mobile">
+    <ul>
+      <li style="--i:0"><a href="#home" class="mobile-nav__link">Home</a></li>
+      <li style="--i:1"><a href="#services" class="mobile-nav__link">Services</a></li>
+      <li style="--i:2"><a href="#approach" class="mobile-nav__link">Approach</a></li>
+    </ul>
+  </nav>
+  <a href="https://wa.me/61405177627?text=Hi%20PER4MANCE%20X%2C%20I%27d%20like%20to%20book%20a%20discovery%20call." target="_blank" rel="noopener" class="btn btn--primary btn--block mobile-nav__cta">
+    <span class="btn__label">Book a Discovery Call</span>
+    <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+  </a>
+</div>
+
+<main id="main">
+
+<!-- ================================================== -->
+<!-- SECTION 1: HERO — dark cinematic -->
+<!-- ================================================== -->
+<section class="hero" id="home">
+  <span class="hero__watermark" data-parallax="26" aria-hidden="true">
+    <svg viewBox="0 0 100 100"><use href="#blade"/></svg>
+  </span>
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <h1 class="hero-heading split-reveal">YOU CAN&rsquo;T HIDE <span class="hl-red">PERFORMANCE.</span></h1>
+      <!-- Animated brand lockup: PER4MANCE stays fixed, the X mark slides right
+           and the active service reveals in the gap. To swap assets: the X is the
+           #blade symbol (assets/img/logo-x.png) defined at the top of this file;
+           PER4MANCE is the .logoplay__word span. -->
+      <div class="logoplay reveal" id="logoPlay">
+        <div class="logoplay__row" id="lpRow" role="img" aria-label="PER4MANCE X">
+          <span class="logoplay__word" id="lpWord" aria-hidden="true">PER4MANCE</span>
+          <span class="logoplay__svc" id="lpSvc" aria-hidden="true"></span>
+          <span class="logoplay__svc logoplay__measure" id="lpMeasure" aria-hidden="true"></span>
+          <span class="logoplay__x" id="lpX" aria-hidden="true"><svg viewBox="0 0 100 100"><use href="#blade"/></svg></span>
+        </div>
+        <div class="logoplay__stack" aria-hidden="true"><span id="lpStackSvc"></span></div>
+      </div>
+    </div>
+
+    <!-- Hero reel sliders — videos from assets/media/ -->
+    <div class="hero__reels reveal" aria-hidden="true">
+      <div class="vcol vcol--down" style="--vdur:26s">
+        <div class="vcol__track">
+          <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-1.mp4.mp4"></video></div>
+          <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-2.mp4.mp4"></video></div>
+          <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-3.mp4.mp4"></video></div>
+          <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-4.mp4.mp4"></video></div>
+          <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-1.mp4.mp4"></video></div>
+          <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-2.mp4.mp4"></video></div>
+          <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-3.mp4.mp4"></video></div>
+          <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-4.mp4.mp4"></video></div>
+        </div>
+      </div>
+      <div class="vcol vcol--up" style="--vdur:30s">
+        <div class="vcol__track">
+          <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-5.mp4.mp4"></video></div>
+          <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-6.mp4.mp4"></video></div>
+          <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-7.mp4.mp4"></video></div>
+          <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-8.mp4.mp4"></video></div>
+          <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-5.mp4.mp4"></video></div>
+          <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-6.mp4.mp4"></video></div>
+          <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-7.mp4.mp4"></video></div>
+          <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-8.mp4.mp4"></video></div>
+        </div>
+      </div>
+      <div class="vcol vcol--down" style="--vdur:34s">
+        <div class="vcol__track">
+          <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-2.mp4.mp4"></video></div>
+          <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-4.mp4.mp4"></video></div>
+          <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-5.mp4.mp4"></video></div>
+          <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-7.mp4.mp4"></video></div>
+          <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-2.mp4.mp4"></video></div>
+          <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-4.mp4.mp4"></video></div>
+          <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-5.mp4.mp4"></video></div>
+          <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-7.mp4.mp4"></video></div>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile: single horizontal reel slider (saari videos, left to right) -->
+    <div class="hero__hreels reveal" aria-hidden="true">
+      <div class="hreel__track">
+        <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-1.mp4.mp4"></video></div>
+        <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-2.mp4.mp4"></video></div>
+        <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-3.mp4.mp4"></video></div>
+        <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-4.mp4.mp4"></video></div>
+        <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-5.mp4.mp4"></video></div>
+        <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-6.mp4.mp4"></video></div>
+        <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-7.mp4.mp4"></video></div>
+        <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-8.mp4.mp4"></video></div>
+        <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-1.mp4.mp4"></video></div>
+        <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-2.mp4.mp4"></video></div>
+        <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-3.mp4.mp4"></video></div>
+        <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-4.mp4.mp4"></video></div>
+        <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-5.mp4.mp4"></video></div>
+        <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-6.mp4.mp4"></video></div>
+        <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-7.mp4.mp4"></video></div>
+        <div class="vslide"><video muted loop playsinline preload="none" src="assets/media/reel-8.mp4.mp4"></video></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ================================================== -->
+<!-- SECTION 4C: BRANDS — client logo slider -->
+<!-- ================================================== -->
+<section class="brands section--dark" id="brands" aria-label="Brands we have worked with">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <p class="section-label reveal"><span class="section-label__dot" aria-hidden="true"></span>Our Clients</p>
+      <h2 class="section-heading split-reveal">Brands We&rsquo;ve Worked With.</h2>
+    </div>
+  </div>
+  <div class="brandline reveal" aria-hidden="true">
+    <div class="brandline__track">
+      <div class="brandline__group">
+        <span class="brand-card"><img src="assets/brands/brand-1.png.png" alt="Brand logo 1" loading="lazy"></span>
+        <span class="brand-card"><img src="assets/brands/brand-2.png.png" alt="Brand logo 2" loading="lazy"></span>
+        <span class="brand-card"><img src="assets/brands/brand-3.png.png" alt="Brand logo 3" loading="lazy"></span>
+        <span class="brand-card"><img src="assets/brands/brand-4.png.png" alt="Brand logo 4" loading="lazy"></span>
+        <span class="brand-card"><img src="assets/brands/brand-5.png.png" alt="Brand logo 5" loading="lazy"></span>
+        <span class="brand-card"><img src="assets/brands/brand-6.png.png" alt="Brand logo 6" loading="lazy"></span>
+        <span class="brand-card"><img src="assets/brands/brand-7.png.png" alt="Brand logo 7" loading="lazy"></span>
+        <span class="brand-card"><img src="assets/brands/brand-8.png.png" alt="Brand logo 8" loading="lazy"></span>
+        <span class="brand-card"><img src="assets/brands/brand-9.png.png" alt="Brand logo 9" loading="lazy"></span>
+        <span class="brand-card"><img src="assets/brands/brand-10.png.png" alt="Brand logo 10" loading="lazy"></span>
+        <span class="brand-card"><img src="assets/brands/brand-11.png.png" alt="Brand logo 11" loading="lazy"></span>
+        <span class="brand-card"><img src="assets/brands/brand-12.png.png" alt="Brand logo 12" loading="lazy"></span>
+        <span class="brand-card"><img src="assets/brands/brand-13.png.png" alt="Brand logo 13" loading="lazy"></span>
+      </div>
+      <div class="brandline__group">
+        <span class="brand-card"><img src="assets/brands/brand-1.png.png" alt="Brand logo 1" loading="lazy"></span>
+        <span class="brand-card"><img src="assets/brands/brand-2.png.png" alt="Brand logo 2" loading="lazy"></span>
+        <span class="brand-card"><img src="assets/brands/brand-3.png.png" alt="Brand logo 3" loading="lazy"></span>
+        <span class="brand-card"><img src="assets/brands/brand-4.png.png" alt="Brand logo 4" loading="lazy"></span>
+        <span class="brand-card"><img src="assets/brands/brand-5.png.png" alt="Brand logo 5" loading="lazy"></span>
+        <span class="brand-card"><img src="assets/brands/brand-6.png.png" alt="Brand logo 6" loading="lazy"></span>
+        <span class="brand-card"><img src="assets/brands/brand-7.png.png" alt="Brand logo 7" loading="lazy"></span>
+        <span class="brand-card"><img src="assets/brands/brand-8.png.png" alt="Brand logo 8" loading="lazy"></span>
+        <span class="brand-card"><img src="assets/brands/brand-9.png.png" alt="Brand logo 9" loading="lazy"></span>
+        <span class="brand-card"><img src="assets/brands/brand-10.png.png" alt="Brand logo 10" loading="lazy"></span>
+        <span class="brand-card"><img src="assets/brands/brand-11.png.png" alt="Brand logo 11" loading="lazy"></span>
+        <span class="brand-card"><img src="assets/brands/brand-12.png.png" alt="Brand logo 12" loading="lazy"></span>
+        <span class="brand-card"><img src="assets/brands/brand-13.png.png" alt="Brand logo 13" loading="lazy"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================== -->
+<!-- SECTION 4A: ABOUT — who we are (video left, content right) -->
+<!-- ================================================== -->
+<section class="about section--dark" id="about" aria-labelledby="aboutHeading">
+  <div class="container about__inner">
+    <div class="about__media reveal">
+      <svg class="about__mark" viewBox="0 0 100 100" aria-hidden="true"><use href="#blade"/></svg>
+      <!-- Apni video is naam se upload karna: assets/media/about.mp4 (portrait, MP4) -->
+      <video src="assets/media/about.mp4" autoplay muted loop playsinline preload="metadata"></video>
+    </div>
+    <div class="about__content">
+      <p class="section-label reveal"><span class="section-label__dot" aria-hidden="true"></span>Who We Are</p>
+      <h2 class="section-heading split-reveal" id="aboutHeading">Top-tier talent. One <span class="hl-red">high-performance</span> team.</h2>
+      <p class="about__copy reveal">PER4MANCE X brings AI visuals, photography and videography, design, content, branding, web and performance marketing under one roof &mdash; one team that covers every discipline your brand needs.</p>
+      <p class="about__copy reveal">The objective is simple: deliver the most advanced, innovative and up-to-date outcomes for your brand, from a single team that speaks every discipline.</p>
+      <a href="https://wa.me/61405177627?text=Hi%20PER4MANCE%20X%2C%20I%27d%20like%20to%20get%20in%20touch." target="_blank" rel="noopener" class="btn btn--secondary about__btn" data-magnetic>
+        <span class="btn__label">Get in Touch</span>
+        <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================== -->
+<!-- SECTION 4B: SERVICE SELECTOR — pick services, request on WhatsApp -->
+<!-- ================================================== -->
+<section class="service-select section--dark" id="services" aria-labelledby="serviceSelectHeading">
+  <div class="container">
+    <div class="section-head section-head--split">
+      <div>
+        <p class="section-label reveal"><span class="section-label__dot" aria-hidden="true"></span>Services</p>
+        <h2 class="section-heading split-reveal" id="serviceSelectHeading">Pick What You Need</h2>
+      </div>
+      <p class="section-head__note reveal">Select one or more services below, then send us your request directly on WhatsApp &mdash; no forms, no back-and-forth.</p>
+    </div>
+    <div class="service-select__grid" id="serviceGrid">
+      <label class="svc-card reveal" style="--i:0">
+        <input type="checkbox" name="service" value="AI Visuals">
+        <svg class="svc-card__icon" viewBox="0 0 16 16" fill="#E31B23" shape-rendering="crispEdges" aria-hidden="true"><rect x="6" y="1" width="4" height="14"/><rect x="1" y="6" width="14" height="4"/><rect x="2" y="2" width="2" height="2"/><rect x="12" y="2" width="2" height="2"/><rect x="2" y="12" width="2" height="2"/><rect x="12" y="12" width="2" height="2"/></svg>
+        <h3>AI Visuals</h3>
+        <p>AI-assisted imagery and concept visuals that bring campaigns to life faster.</p>
+        <span class="svc-card__cta"><span class="svc-card__check" aria-hidden="true"></span>Add to Request</span>
+      </label>
+      <label class="svc-card reveal" style="--i:1">
+        <input type="checkbox" name="service" value="Photography and Videography">
+        <svg class="svc-card__icon" viewBox="0 0 16 16" fill="#E31B23" shape-rendering="crispEdges" aria-hidden="true"><rect x="1" y="4" width="14" height="10"/><rect x="5" y="2" width="4" height="2"/><rect x="6" y="7" width="4" height="4" fill="#0B0B0C"/><rect x="7" y="8" width="2" height="2"/><rect x="12" y="6" width="2" height="1" fill="#0B0B0C"/></svg>
+        <h3>Photography and Videography</h3>
+        <p>Professional shoots that capture your brand, spaces and story.</p>
+        <span class="svc-card__cta"><span class="svc-card__check" aria-hidden="true"></span>Add to Request</span>
+      </label>
+      <label class="svc-card reveal" style="--i:2">
+        <input type="checkbox" name="service" value="Graphic Designing">
+        <svg class="svc-card__icon" viewBox="0 0 16 16" fill="#E31B23" shape-rendering="crispEdges" aria-hidden="true"><rect x="11" y="1" width="4" height="4"/><rect x="8" y="4" width="4" height="4"/><rect x="5" y="7" width="4" height="4"/><rect x="2" y="10" width="3" height="3"/><rect x="1" y="13" width="2" height="2"/></svg>
+        <h3>Graphic Designing</h3>
+        <p>Sharp, on-brand design for every campaign touchpoint.</p>
+        <span class="svc-card__cta"><span class="svc-card__check" aria-hidden="true"></span>Add to Request</span>
+      </label>
+      <label class="svc-card reveal" style="--i:3">
+        <input type="checkbox" name="service" value="Content Production">
+        <svg class="svc-card__icon" viewBox="0 0 16 16" fill="#E31B23" shape-rendering="crispEdges" aria-hidden="true"><rect x="1" y="2" width="14" height="10"/><rect x="3" y="4" width="10" height="6" fill="#0B0B0C"/><rect x="6" y="5" width="2" height="4"/><rect x="8" y="6" width="2" height="2"/><rect x="6" y="13" width="4" height="1"/><rect x="4" y="14" width="8" height="1"/></svg>
+        <h3>Content Production</h3>
+        <p>Content planned, produced and packaged for every channel.</p>
+        <span class="svc-card__cta"><span class="svc-card__check" aria-hidden="true"></span>Add to Request</span>
+      </label>
+      <label class="svc-card reveal" style="--i:4">
+        <input type="checkbox" name="service" value="Branding">
+        <svg class="svc-card__icon" viewBox="0 0 16 16" fill="#E31B23" shape-rendering="crispEdges" aria-hidden="true"><rect x="3" y="1" width="2" height="14"/><rect x="5" y="2" width="9" height="6"/><rect x="5" y="8" width="6" height="2"/></svg>
+        <h3>Branding</h3>
+        <p>Identity systems that position your brand with clarity and confidence.</p>
+        <span class="svc-card__cta"><span class="svc-card__check" aria-hidden="true"></span>Add to Request</span>
+      </label>
+      <label class="svc-card reveal" style="--i:5">
+        <input type="checkbox" name="service" value="Web Design">
+        <svg class="svc-card__icon" viewBox="0 0 16 16" fill="#E31B23" shape-rendering="crispEdges" aria-hidden="true"><rect x="1" y="3" width="14" height="10"/><rect x="2" y="7" width="12" height="5" fill="#0B0B0C"/><rect x="3" y="4" width="1" height="1" fill="#0B0B0C"/><rect x="5" y="4" width="1" height="1" fill="#0B0B0C"/><rect x="7" y="4" width="1" height="1" fill="#0B0B0C"/></svg>
+        <h3>Web Design</h3>
+        <p>Fast, conversion-focused websites and landing pages.</p>
+        <span class="svc-card__cta"><span class="svc-card__check" aria-hidden="true"></span>Add to Request</span>
+      </label>
+      <label class="svc-card reveal" style="--i:6">
+        <input type="checkbox" name="service" value="SEO/AEO/GEO">
+        <svg class="svc-card__icon" viewBox="0 0 16 16" fill="#E31B23" shape-rendering="crispEdges" aria-hidden="true"><rect x="4" y="2" width="6" height="2"/><rect x="2" y="4" width="2" height="6"/><rect x="10" y="4" width="2" height="6"/><rect x="4" y="10" width="6" height="2"/><rect x="11" y="11" width="2" height="2"/><rect x="13" y="13" width="2" height="2"/></svg>
+        <h3>SEO/AEO/GEO</h3>
+        <p>Search, answer-engine and generative-engine optimisation for lasting visibility.</p>
+        <span class="svc-card__cta"><span class="svc-card__check" aria-hidden="true"></span>Add to Request</span>
+      </label>
+      <label class="svc-card reveal" style="--i:7">
+        <input type="checkbox" name="service" value="Performance Marketing">
+        <svg class="svc-card__icon" viewBox="0 0 16 16" fill="#E31B23" shape-rendering="crispEdges" aria-hidden="true"><rect x="2" y="9" width="3" height="5"/><rect x="6" y="6" width="3" height="8"/><rect x="10" y="3" width="3" height="11"/><rect x="13" y="1" width="2" height="2"/></svg>
+        <h3>Performance Marketing</h3>
+        <p>Paid campaigns engineered around measurable outcomes.</p>
+        <span class="svc-card__cta"><span class="svc-card__check" aria-hidden="true"></span>Add to Request</span>
+      </label>
+      <label class="svc-card reveal" style="--i:8">
+        <input type="checkbox" name="service" value="Social Media Marketing">
+        <svg class="svc-card__icon" viewBox="0 0 16 16" fill="#E31B23" shape-rendering="crispEdges" aria-hidden="true"><rect x="1" y="2" width="14" height="9"/><rect x="4" y="5" width="2" height="2" fill="#0B0B0C"/><rect x="7" y="5" width="2" height="2" fill="#0B0B0C"/><rect x="10" y="5" width="2" height="2" fill="#0B0B0C"/><rect x="4" y="11" width="4" height="2"/><rect x="4" y="13" width="2" height="2"/></svg>
+        <h3>Social Media Marketing</h3>
+        <p>Strategy, content and management that grow your social presence.</p>
+        <span class="svc-card__cta"><span class="svc-card__check" aria-hidden="true"></span>Add to Request</span>
+      </label>
+    </div>
+
+    <!-- Request bar — appears when services are selected; sends the list to WhatsApp -->
+    <div class="request-bar" id="requestBar" aria-live="polite">
+      <p class="request-bar__count"><span id="requestCount">0</span> selected</p>
+      <p class="request-bar__list" id="requestList"></p>
+      <a href="#" class="btn btn--primary" id="requestSend" target="_blank" rel="noopener">
+        <span class="btn__label">Book a Discovery Call</span>
+        <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================== -->
+<!-- SECTION 5B: GLOBAL PRESENCE — animated world map -->
+<!-- ================================================== -->
+<section class="world section--deep" id="global">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <p class="section-label reveal"><span class="section-label__dot" aria-hidden="true"></span>Global Presence</p>
+      <h2 class="section-heading split-reveal">Where We Work.</h2>
+    </div>
+
+    <div class="world__map reveal" aria-label="World map showing PER4MANCE X presence in Canada, USA, UAE, India and Australia">
+      <svg viewBox="0 0 1600 700" role="img" aria-hidden="true">
+        <!-- Dotted map artwork rendered from Natural Earth country data -->
+        <image href="assets/img/world-dots.png" width="1600" height="700"/>
+        <g class="world__pin" style="--d:0" transform="translate(333,108)">
+          <g class="world__pin-inner">
+            <ellipse class="world__pin-glow" cx="0" cy="0" rx="26" ry="7"/>
+            <path class="world__pin-mark" d="M0 0 C-4 -14 -22 -19 -22 -35 A22 22 0 1 1 22 -35 C22 -19 4 -14 0 0 Z"/>
+            <circle class="world__pin-hole" cx="0" cy="-35" r="8.5"/>
+            <text class="world__pin-label" x="0" y="36">CANADA</text>
+          </g>
+        </g>
+        <g class="world__pin" style="--d:1" transform="translate(360,203)">
+          <g class="world__pin-inner">
+            <ellipse class="world__pin-glow" cx="0" cy="0" rx="26" ry="7"/>
+            <path class="world__pin-mark" d="M0 0 C-4 -14 -22 -19 -22 -35 A22 22 0 1 1 22 -35 C22 -19 4 -14 0 0 Z"/>
+            <circle class="world__pin-hole" cx="0" cy="-35" r="8.5"/>
+            <text class="world__pin-label" x="0" y="36">USA</text>
+          </g>
+        </g>
+        <g class="world__pin" style="--d:2" transform="translate(1042,275)">
+          <g class="world__pin-inner">
+            <ellipse class="world__pin-glow" cx="0" cy="0" rx="26" ry="7"/>
+            <path class="world__pin-mark" d="M0 0 C-4 -14 -22 -19 -22 -35 A22 22 0 1 1 22 -35 C22 -19 4 -14 0 0 Z"/>
+            <circle class="world__pin-hole" cx="0" cy="-35" r="8.5"/>
+            <text class="world__pin-label" x="0" y="36">UAE</text>
+          </g>
+        </g>
+        <g class="world__pin" style="--d:3" transform="translate(1147,288)">
+          <g class="world__pin-inner">
+            <ellipse class="world__pin-glow" cx="0" cy="0" rx="26" ry="7"/>
+            <path class="world__pin-mark" d="M0 0 C-4 -14 -22 -19 -22 -35 A22 22 0 1 1 22 -35 C22 -19 4 -14 0 0 Z"/>
+            <circle class="world__pin-hole" cx="0" cy="-35" r="8.5"/>
+            <text class="world__pin-label" x="0" y="36">INDIA</text>
+          </g>
+        </g>
+        <g class="world__pin" style="--d:4" transform="translate(1471,575)">
+          <g class="world__pin-inner">
+            <ellipse class="world__pin-glow" cx="0" cy="0" rx="26" ry="7"/>
+            <path class="world__pin-mark" d="M0 0 C-4 -14 -22 -19 -22 -35 A22 22 0 1 1 22 -35 C22 -19 4 -14 0 0 Z"/>
+            <circle class="world__pin-hole" cx="0" cy="-35" r="8.5"/>
+            <text class="world__pin-label" x="0" y="36">AUSTRALIA</text>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================== -->
+<!-- SECTION 6: PROCESS — dark columns with progress line -->
+<!-- ================================================== -->
+<section class="process section--dark" id="approach">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <p class="section-label reveal"><span class="section-label__dot" aria-hidden="true"></span>Our Process</p>
+      <h2 class="section-heading split-reveal">A Clear System From Brief to Results.</h2>
+    </div>
+
+    <div class="process__line" aria-hidden="true"><span id="processProgress"></span></div>
+
+    <ol class="process__grid" role="list">
+      <li class="process-card reveal" style="--i:0">
+        <span class="process-card__num">01</span>
+        <h3 class="process-card__title">Discover and Position</h3>
+        <p class="process-card__copy">We understand your brand, audience, offer and commercial objective before building anything.</p>
+        <ul class="process-card__list" role="list">
+          <li>Discovery</li>
+          <li>Audience research</li>
+          <li>Positioning</li>
+          <li>Campaign roadmap</li>
+        </ul>
+      </li>
+      <li class="process-card reveal" style="--i:1">
+        <span class="process-card__num">02</span>
+        <h3 class="process-card__title">Create and Launch</h3>
+        <p class="process-card__copy">We develop the creative, content and media structure required to launch with clarity.</p>
+        <ul class="process-card__list" role="list">
+          <li>Campaign concepts</li>
+          <li>Creative assets</li>
+          <li>Production and setup</li>
+          <li>Web and landing pages</li>
+        </ul>
+      </li>
+      <li class="process-card reveal" style="--i:2">
+        <span class="process-card__num">03</span>
+        <h3 class="process-card__title">Optimise and Scale</h3>
+        <p class="process-card__copy">We review performance, test new angles and optimise towards stronger outcomes.</p>
+        <ul class="process-card__list" role="list">
+          <li>Creative testing</li>
+          <li>Media optimisation</li>
+          <li>Quality review</li>
+          <li>Performance reporting</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- ================================================== -->
+<!-- SECTION 12: FINAL CTA — deep black -->
+<!-- ================================================== -->
+<section class="final-cta section--deep" id="final-cta">
+  <span class="final-cta__x" data-parallax="40" aria-hidden="true">
+    <svg viewBox="0 0 100 100"><use href="#blade"/></svg>
+  </span>
+  <div class="container">
+    <h2 class="section-heading section-heading--xl split-reveal">Ready to Move Your Brand Forward?</h2>
+    <p class="final-cta__copy reveal">Build a system that connects the right audience, stronger creative and meaningful action.</p>
+    <div class="final-cta__btns reveal">
+      <a href="https://wa.me/61405177627?text=Hi%20PER4MANCE%20X%2C%20I%27d%20like%20to%20book%20a%20discovery%20call." target="_blank" rel="noopener" class="btn btn--primary" data-magnetic>
+        <span class="btn__label">Book a Discovery Call</span>
+        <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+      </a>
+      <a href="#services" class="btn btn--ghost-light" data-magnetic>
+        <span class="btn__label">Explore Our Services</span>
+        <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================================================== -->
+<!-- SECTION 13: FOOTER -->
+<!-- ================================================== -->
+<footer class="footer section--deep">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="assets/img/logo-wordmark.png" alt="PER4MANCE X logo" class="footer__logo" width="1400" height="244" loading="lazy">
+        <p class="footer__desc">A full-service creative and performance marketing agency &mdash; AI visuals, content, branding, web, SEO and paid media under one roof.</p>
+      </div>
+      <nav class="footer__col" aria-label="Footer navigation">
+        <h3>Navigation</h3>
+        <ul role="list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#approach">Approach</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__col" aria-label="Footer services">
+        <h3>Services</h3>
+        <ul role="list">
+          <li><a href="#services">AI Visuals</a></li>
+          <li><a href="#services">Photography and Videography</a></li>
+          <li><a href="#services">Branding &amp; Design</a></li>
+          <li><a href="#services">Web Design &amp; SEO</a></li>
+          <li><a href="#services">Performance &amp; Social Marketing</a></li>
+        </ul>
+      </nav>
+      <div class="footer__col">
+        <h3>Contact</h3>
+        <ul role="list">
+          <li><a href="https://wa.me/61405177627?text=Hi%20PER4MANCE%20X%2C%20I%27d%20like%20to%20book%20a%20discovery%20call." target="_blank" rel="noopener">Book a Discovery Call</a></li>
+          <li><a href="mailto:info@per4mancex.com.au">info@per4mancex.com.au</a></li>
+          <li><a href="tel:+61405177627">+61 405 177 627</a></li>
+        </ul>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/per4mancex_au/" target="_blank" rel="noopener" aria-label="PER4MANCE X on Instagram">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.7"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__line">Built to Perform.</p>
+      <ul class="footer__legal" role="list">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+      <p class="footer__copyright">&copy; <span id="footerYear">2026</span> PER4MANCE <img src="assets/img/logo-x.png" alt="X" class="brandx-img">. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
