@@ -96,10 +96,78 @@
     /* The site opens only when the visitor clicks the X mark */
     setTimeout(function () { o.classList.add("is-logo"); }, 250);
     enter.addEventListener("click", function () {
-      if (o.classList.contains("is-open")) return;
-      o.classList.add("is-open");
-      setTimeout(finishOpening, prefersReducedMotion ? 300 : 1000);
+      if (o.classList.contains("is-split")) return;
+      /* The X shatters into dots, then the screen opens */
+      o.classList.add("is-split");
+      var img = document.getElementById("openingLogo");
+      if (!prefersReducedMotion && img && img.complete) {
+        try { shatterLogo(o, img); } catch (e) {}
+      }
+      setTimeout(function () { o.classList.add("is-open"); }, prefersReducedMotion ? 50 : 420);
+      setTimeout(finishOpening, prefersReducedMotion ? 400 : 1500);
     });
+  }
+
+  /* Scatter the opening logo into dots sampled from its own pixels */
+  function shatterLogo(overlay, img) {
+    var rect = img.getBoundingClientRect();
+    var w = Math.max(1, Math.round(rect.width));
+    var h = Math.max(1, Math.round(rect.height));
+    var os = document.createElement("canvas");
+    os.width = w;
+    os.height = h;
+    var octx = os.getContext("2d");
+    octx.drawImage(img, 0, 0, w, h);
+    var data;
+    try { data = octx.getImageData(0, 0, w, h).data; } catch (e) { return; }
+    var gap = Math.max(5, Math.round(w / 42));
+    var isMobileDevice = window.innerWidth < 768;
+    var gapMult = isMobileDevice ? 1.6 : 1;
+    var parts = [];
+    for (var y = 0; y < h; y += gap * gapMult) {
+      for (var x = 0; x < w; x += gap * gapMult) {
+        var i = (y * w + x) * 4;
+        if (data[i + 3] > 120) {
+          parts.push({
+            x: rect.left + x,
+            y: rect.top + y,
+            vx: (Math.random() - 0.5) * 9,
+            vy: (Math.random() - 0.5) * 9 - 1.6,
+            r: gap * 0.42 * (0.65 + Math.random() * 0.55),
+            c: "rgb(" + data[i] + "," + data[i + 1] + "," + data[i + 2] + ")"
+          });
+        }
+      }
+    }
+    if (!parts.length) return;
+    var dpr = Math.min(2, window.devicePixelRatio || 1);
+    var cv = document.createElement("canvas");
+    cv.className = "opening__dots";
+    cv.width = Math.round(window.innerWidth * dpr);
+    cv.height = Math.round(window.innerHeight * dpr);
+    overlay.appendChild(cv);
+    var ctx = cv.getContext("2d");
+    ctx.scale(dpr, dpr);
+    var t0 = performance.now(), DUR = isMobileDevice ? 850 : 1050;
+    function tick(now) {
+      var p = (now - t0) / DUR;
+      if (p >= 1) { cv.remove(); return; }
+      ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+      ctx.globalAlpha = Math.max(0, 1 - Math.max(0, p - 0.25) / 0.75);
+      for (var k = 0; k < parts.length; k++) {
+        var pt = parts[k];
+        pt.x += pt.vx;
+        pt.y += pt.vy;
+        pt.vy += 0.07;
+        pt.vx *= 0.992;
+        ctx.fillStyle = pt.c;
+        ctx.beginPath();
+        ctx.arc(pt.x, pt.y, pt.r, 0, 6.2832);
+        ctx.fill();
+      }
+      requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
   }
 
   /* Stagger the hero content in as the opening completes */
@@ -619,6 +687,10 @@
       clearTimeout(remeasure);
       remeasure = setTimeout(measureAll, 150);
     });
+    /* The word is a logo image — re-measure once it has loaded */
+    if (word.tagName === "IMG" && !word.complete) {
+      word.addEventListener("load", measureAll);
+    }
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(start);
     else start();
   }

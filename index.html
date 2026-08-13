@@ -26,7 +26,8 @@
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400..700&family=Inter:wght@400..700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400..700&family=Inter:wght@400..700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400..700&family=Inter:wght@400..700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"></noscript>
 
 <link rel="stylesheet" href="assets/css/main.css">
 <script>document.documentElement.classList.add("js");</script>
@@ -65,7 +66,11 @@
   <div class="opening__panel opening__panel--b"></div>
   <div class="opening__panel opening__panel--l"></div>
   <button class="opening__enter" id="openingEnter" aria-label="Enter website">
-    <img class="opening__logo" src="assets/img/logo-x.png" alt="" width="800" height="779">
+    <img class="opening__logo" id="openingLogo" src="assets/img/logo-x.png" alt="" width="800" height="779">
+    <div class="opening__hint">
+      <span class="opening__hint-line">CLICK <img class="opening__hint-logo" src="assets/img/logo-x.png" alt="X" width="80" height="79"></span>
+      <span class="opening__hint-line">REVEAL PERFORMANCE.</span>
+    </div>
   </button>
 </div>
 
@@ -91,13 +96,19 @@
       <ul>
         <li><a href="#home" class="nav-link is-active">Home</a></li>
         <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#approach" class="nav-link">Approach</a></li>
+        <li><a href="#approach" class="nav-link">Process</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
-    <a href="https://wa.me/61405177627?text=Hi%20PER4MANCE%20X%2C%20I%27d%20like%20to%20book%20a%20discovery%20call." target="_blank" rel="noopener" class="btn btn--primary btn--sm header__cta" data-magnetic>
-      <span class="btn__label">Book a Discovery Call</span>
-      <span class="btn__arrow" aria-hidden="true">&rarr;</span>
-    </a>
+    <div class="header__actions">
+      <a href="https://www.instagram.com/per4mancex_au/" target="_blank" rel="noopener" class="nav-insta" aria-label="PER4MANCE X on Instagram">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.7"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg>
+      </a>
+      <a href="https://wa.me/61405177627?text=Hi%20PER4MANCE%20X%2C%20I%27d%20like%20to%20book%20a%20discovery%20call." target="_blank" rel="noopener" class="btn btn--primary btn--sm header__cta" data-magnetic>
+        <span class="btn__label">Book a Discovery Call</span>
+        <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
     <button class="header__burger" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
       <span></span><span></span>
     </button>
@@ -111,7 +122,11 @@
     <ul>
       <li style="--i:0"><a href="#home" class="mobile-nav__link">Home</a></li>
       <li style="--i:1"><a href="#services" class="mobile-nav__link">Services</a></li>
-      <li style="--i:2"><a href="#approach" class="mobile-nav__link">Approach</a></li>
+      <li style="--i:2"><a href="#approach" class="mobile-nav__link">Process</a></li>
+      <li style="--i:3"><a href="#contact" class="mobile-nav__link">Contact</a></li>
+      <li style="--i:4"><a href="https://www.instagram.com/per4mancex_au/" target="_blank" rel="noopener" class="mobile-nav__link mobile-nav__insta" aria-label="PER4MANCE X on Instagram">Instagram
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.7"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg>
+      </a></li>
     </ul>
   </nav>
   <a href="https://wa.me/61405177627?text=Hi%20PER4MANCE%20X%2C%20I%27d%20like%20to%20book%20a%20discovery%20call." target="_blank" rel="noopener" class="btn btn--primary btn--block mobile-nav__cta">
@@ -138,7 +153,7 @@
            PER4MANCE is the .logoplay__word span. -->
       <div class="logoplay reveal" id="logoPlay">
         <div class="logoplay__row" id="lpRow" role="img" aria-label="PER4MANCE X">
-          <span class="logoplay__word" id="lpWord" aria-hidden="true">PER4MANCE</span>
+          <img class="logoplay__word" id="lpWord" src="assets/img/logo-word.png" alt="" width="1142" height="122" aria-hidden="true">
           <span class="logoplay__svc" id="lpSvc" aria-hidden="true"></span>
           <span class="logoplay__svc logoplay__measure" id="lpMeasure" aria-hidden="true"></span>
           <span class="logoplay__x" id="lpX" aria-hidden="true"><svg viewBox="0 0 100 100"><use href="#blade"/></svg></span>
@@ -274,7 +289,7 @@
       <h2 class="section-heading split-reveal" id="aboutHeading">Top-tier talent. One <span class="hl-red">high-performance</span> team.</h2>
       <p class="about__copy reveal">PER4MANCE X brings AI visuals, photography and videography, design, content, branding, web and performance marketing under one roof &mdash; one team that covers every discipline your brand needs.</p>
       <p class="about__copy reveal">The objective is simple: deliver the most advanced, innovative and up-to-date outcomes for your brand, from a single team that speaks every discipline.</p>
-      <a href="https://wa.me/61405177627?text=Hi%20PER4MANCE%20X%2C%20I%27d%20like%20to%20get%20in%20touch." target="_blank" rel="noopener" class="btn btn--secondary about__btn" data-magnetic>
+      <a href="https://wa.me/61405177627?text=Hi%20PER4MANCE%20X%2C%20I%27d%20like%20to%20get%20in%20touch." target="_blank" rel="noopener" class="btn btn--ghost-light about__btn" data-magnetic>
         <span class="btn__label">Get in Touch</span>
         <span class="btn__arrow" aria-hidden="true">&rarr;</span>
       </a>
@@ -390,41 +405,31 @@
         <image href="assets/img/world-dots.png" width="1600" height="700"/>
         <g class="world__pin" style="--d:0" transform="translate(333,108)">
           <g class="world__pin-inner">
-            <ellipse class="world__pin-glow" cx="0" cy="0" rx="26" ry="7"/>
-            <path class="world__pin-mark" d="M0 0 C-4 -14 -22 -19 -22 -35 A22 22 0 1 1 22 -35 C22 -19 4 -14 0 0 Z"/>
-            <circle class="world__pin-hole" cx="0" cy="-35" r="8.5"/>
+            <ellipse class="world__pin-glow" cx="0" cy="29" rx="38" ry="10"/>
             <text class="world__pin-label" x="0" y="36">CANADA</text>
           </g>
         </g>
         <g class="world__pin" style="--d:1" transform="translate(360,203)">
           <g class="world__pin-inner">
-            <ellipse class="world__pin-glow" cx="0" cy="0" rx="26" ry="7"/>
-            <path class="world__pin-mark" d="M0 0 C-4 -14 -22 -19 -22 -35 A22 22 0 1 1 22 -35 C22 -19 4 -14 0 0 Z"/>
-            <circle class="world__pin-hole" cx="0" cy="-35" r="8.5"/>
+            <ellipse class="world__pin-glow" cx="0" cy="29" rx="38" ry="10"/>
             <text class="world__pin-label" x="0" y="36">USA</text>
           </g>
         </g>
         <g class="world__pin" style="--d:2" transform="translate(1042,275)">
           <g class="world__pin-inner">
-            <ellipse class="world__pin-glow" cx="0" cy="0" rx="26" ry="7"/>
-            <path class="world__pin-mark" d="M0 0 C-4 -14 -22 -19 -22 -35 A22 22 0 1 1 22 -35 C22 -19 4 -14 0 0 Z"/>
-            <circle class="world__pin-hole" cx="0" cy="-35" r="8.5"/>
+            <ellipse class="world__pin-glow" cx="0" cy="29" rx="38" ry="10"/>
             <text class="world__pin-label" x="0" y="36">UAE</text>
           </g>
         </g>
         <g class="world__pin" style="--d:3" transform="translate(1147,288)">
           <g class="world__pin-inner">
-            <ellipse class="world__pin-glow" cx="0" cy="0" rx="26" ry="7"/>
-            <path class="world__pin-mark" d="M0 0 C-4 -14 -22 -19 -22 -35 A22 22 0 1 1 22 -35 C22 -19 4 -14 0 0 Z"/>
-            <circle class="world__pin-hole" cx="0" cy="-35" r="8.5"/>
+            <ellipse class="world__pin-glow" cx="0" cy="29" rx="38" ry="10"/>
             <text class="world__pin-label" x="0" y="36">INDIA</text>
           </g>
         </g>
         <g class="world__pin" style="--d:4" transform="translate(1471,575)">
           <g class="world__pin-inner">
-            <ellipse class="world__pin-glow" cx="0" cy="0" rx="26" ry="7"/>
-            <path class="world__pin-mark" d="M0 0 C-4 -14 -22 -19 -22 -35 A22 22 0 1 1 22 -35 C22 -19 4 -14 0 0 Z"/>
-            <circle class="world__pin-hole" cx="0" cy="-35" r="8.5"/>
+            <ellipse class="world__pin-glow" cx="0" cy="29" rx="38" ry="10"/>
             <text class="world__pin-label" x="0" y="36">AUSTRALIA</text>
           </g>
         </g>
@@ -492,7 +497,7 @@
 <!-- ================================================== -->
 <!-- SECTION 12: FINAL CTA — deep black -->
 <!-- ================================================== -->
-<section class="final-cta section--deep" id="final-cta">
+<section class="final-cta section--deep" id="contact">
   <span class="final-cta__x" data-parallax="40" aria-hidden="true">
     <svg viewBox="0 0 100 100"><use href="#blade"/></svg>
   </span>
@@ -508,6 +513,20 @@
         <span class="btn__label">Explore Our Services</span>
         <span class="btn__arrow" aria-hidden="true">&rarr;</span>
       </a>
+    </div>
+    <div class="final-cta__meta reveal">
+      <div class="final-cta__meta-item">
+        <span class="final-cta__meta-label">WhatsApp</span>
+        <a href="https://wa.me/61405177627" target="_blank" rel="noopener">+61 405 177 627</a>
+      </div>
+      <div class="final-cta__meta-item">
+        <span class="final-cta__meta-label">Studio</span>
+        <span>Sydney, Australia</span>
+      </div>
+      <div class="final-cta__meta-item">
+        <span class="final-cta__meta-label">Instagram</span>
+        <a href="https://www.instagram.com/per4mancex_au/" target="_blank" rel="noopener">@per4mancex_au</a>
+      </div>
     </div>
   </div>
 </section>
@@ -529,7 +548,7 @@
         <ul role="list">
           <li><a href="#home">Home</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#approach">Approach</a></li>
+          <li><a href="#approach">Process</a></li>
         </ul>
       </nav>
       <nav class="footer__col" aria-label="Footer services">
