@@ -40,6 +40,98 @@
     */
   ];
 
+  /* ==================================================
+     EDITABLE DATA — testimonial cards (What Clients Say)
+     Replace these placeholder entries with real,
+     client-approved quotes. Fields: quote, name, role.
+     ================================================== */
+  var TESTI_CARDS = [
+    {
+      quote: "Our phones didn\u2019t stop ringing within 3 months. We hired two more technicians just to handle the volume. Working with PER4MANCE X completely changed how customers find us.",
+      name: "Abram Ayala",
+      role: "HVAC Owner, Ace Comfort Air Conditioning & Heating"
+    },
+    {
+      quote: "I was turning away work within 4 months. Had to open a second location just to keep up. PER4MANCE X is the best investment I\u2019ve ever made.",
+      name: "Daniel Carter",
+      role: "Auto Detailing Owner, California Detailing"
+    },
+    {
+      quote: "Same budget, three times the results. The reports actually make sense now, I know exactly where every customer is coming from.",
+      name: "Aaliyah",
+      role: "Cleaning Business Owner, ShineOn Holiday Home Cleaning"
+    },
+    {
+      quote: "We got a brand new website and within 3 months we were showing up for searches we never even knew existed. Our phone hasn\u2019t stopped since.",
+      name: "Austin McMeans",
+      role: "Roofing Owner, Vertical Solutions Roofing & Construction"
+    },
+    {
+      quote: "We were completely invisible online before. Now we\u2019re first on Google Maps and fully booked weeks in advance. That never happened before PER4MANCE X.",
+      name: "Omar Al Zaabi",
+      role: "Landscaping Owner, Garden Grow Landscaping & Gardening LLC"
+    }
+  ];
+
+  /* ---------- Testimonials: travelling light behind the cards ---------- */
+  function initTestiLights() {
+    var row = document.getElementById("testiRow");
+    if (!row || !TESTI_CARDS.length) return;
+
+    var cards = TESTI_CARDS.map(function (t) {
+      var card = document.createElement("article");
+      card.className = "testi-card";
+      var mark = document.createElement("span");
+      mark.className = "testi-card__mark";
+      mark.setAttribute("aria-hidden", "true");
+      mark.textContent = "“";
+      var quote = document.createElement("p");
+      quote.className = "testi-card__quote";
+      quote.textContent = t.quote;
+      var who = document.createElement("div");
+      var name = document.createElement("span");
+      name.className = "testi-card__name";
+      name.textContent = t.name;
+      var role = document.createElement("span");
+      role.className = "testi-card__role";
+      role.textContent = t.role;
+      who.appendChild(name);
+      who.appendChild(role);
+      card.appendChild(mark);
+      card.appendChild(quote);
+      card.appendChild(who);
+      row.appendChild(card);
+      return card;
+    });
+
+    if (prefersReducedMotion) return;
+
+    var light = document.createElement("div");
+    light.className = "testi__light";
+    light.setAttribute("aria-hidden", "true");
+    row.insertBefore(light, row.firstChild);
+
+    /* 1 → 5 → back to 1, then repeat — performance energy through the system */
+    var order = [0, 1, 2, 3, 4, 3, 2, 1];
+    var pos = 0;
+    var STEP = 1900;
+
+    function step() {
+      var k = order[pos % order.length];
+      pos++;
+      var card = cards[k];
+      cards.forEach(function (c, i) { c.classList.toggle("is-lit", i === k); });
+      var x = card.offsetLeft + card.offsetWidth / 2;
+      light.style.transform = "translateX(" + x + "px)";
+      /* Keep the lit card in view when the row scrolls (tablet/mobile) */
+      if (row.scrollWidth > row.clientWidth + 4) {
+        row.scrollTo({ left: x - row.clientWidth / 2, behavior: "smooth" });
+      }
+    }
+    step();
+    setInterval(step, STEP);
+  }
+
   /* ---------- Split headings into masked words ---------- */
   function splitHeadings() {
     document.querySelectorAll(".split-reveal").forEach(function (el) {
@@ -253,12 +345,12 @@
     });
   }
 
-  /* ---------- Scroll progress + process line ---------- */
+  /* ---------- Scroll progress + process steps ---------- */
   function initProgress() {
     var bar = document.getElementById("scrollProgressBar");
-    var processBar = document.getElementById("processProgress");
     var processSection = document.getElementById("approach");
-    var processGrid = document.querySelector(".process__grid");
+    var steps = document.querySelectorAll("#processSteps .step");
+    var links = document.querySelectorAll("#processSteps .steps__link");
     var ticking = false;
 
     function update() {
@@ -268,13 +360,22 @@
       var p = max > 0 ? window.scrollY / max : 0;
       if (bar) bar.style.transform = "scaleX(" + p + ")";
 
-      if (processSection) {
+      if (processSection && steps.length) {
+        /* 0 → 1 while the section scrolls through the viewport; steps
+           turn brand-red one after another as the visitor scrolls */
         var rect = processSection.getBoundingClientRect();
         var total = rect.height + window.innerHeight * 0.2;
         var passed = window.innerHeight * 0.8 - rect.top;
         var sp = Math.min(1, Math.max(0, passed / total));
-        if (processBar) processBar.style.transform = "scaleX(" + sp + ")";
-        if (processGrid) processGrid.style.setProperty("--timeline", (sp * 100).toFixed(1) + "%");
+        var thresholds = [0.15, 0.4, 0.65];
+        for (var i = 0; i < steps.length; i++) {
+          steps[i].classList.toggle("is-on", sp >= thresholds[i]);
+        }
+        /* Connector lines light up between one step and the next */
+        var linkThresholds = [0.28, 0.53];
+        for (var j = 0; j < links.length; j++) {
+          links[j].classList.toggle("is-on", sp >= linkThresholds[j]);
+        }
       }
     }
     window.addEventListener("scroll", function () {
@@ -733,6 +834,7 @@
     initMagnetic();
     initImageFallback();
     initTestimonials();
+    initTestiLights();
     initForm();
     initServiceSelect();
     initLogoPlay();

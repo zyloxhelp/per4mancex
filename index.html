@@ -77,6 +77,12 @@
 <!-- Scroll progress -->
 <div class="scroll-progress" aria-hidden="true"><span id="scrollProgressBar"></span></div>
 
+<!-- Sticky CTA — stays fixed on every page section -->
+<a href="https://wa.me/61405177627?text=Hi%20PER4MANCE%20X%2C%20I%27d%20like%20to%20book%20a%20discovery%20call." target="_blank" rel="noopener" class="btn btn--primary sticky-cta" aria-label="Book a discovery call on WhatsApp">
+  <svg class="sticky-cta__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-2-1.2 7.5 7.5 0 0 1-1.4-1.7c-.1-.3 0-.4.1-.5l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.4-.3Z"/></svg>
+  <span class="btn__label">Book a Discovery Call</span>
+</a>
+
 <!-- Logo cursor follower (desktop only) -->
 <div class="logo-cursor" id="logoCursor" aria-hidden="true">
   <img src="assets/img/logo-x.png" alt="" width="800" height="779">
@@ -109,31 +115,8 @@
         <span class="btn__arrow" aria-hidden="true">&rarr;</span>
       </a>
     </div>
-    <button class="header__burger" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
-      <span></span><span></span>
-    </button>
   </div>
 </header>
-
-<!-- Mobile navigation overlay -->
-<div class="mobile-nav" id="mobileNav" aria-hidden="true">
-  <svg class="mobile-nav__x" viewBox="0 0 100 100" aria-hidden="true"><use href="#blade"/></svg>
-  <nav aria-label="Mobile">
-    <ul>
-      <li style="--i:0"><a href="#home" class="mobile-nav__link">Home</a></li>
-      <li style="--i:1"><a href="#services" class="mobile-nav__link">Services</a></li>
-      <li style="--i:2"><a href="#approach" class="mobile-nav__link">Process</a></li>
-      <li style="--i:3"><a href="#contact" class="mobile-nav__link">Contact</a></li>
-      <li style="--i:4"><a href="https://www.instagram.com/per4mancex_au/" target="_blank" rel="noopener" class="mobile-nav__link mobile-nav__insta" aria-label="PER4MANCE X on Instagram">Instagram
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.7"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg>
-      </a></li>
-    </ul>
-  </nav>
-  <a href="https://wa.me/61405177627?text=Hi%20PER4MANCE%20X%2C%20I%27d%20like%20to%20book%20a%20discovery%20call." target="_blank" rel="noopener" class="btn btn--primary btn--block mobile-nav__cta">
-    <span class="btn__label">Book a Discovery Call</span>
-    <span class="btn__arrow" aria-hidden="true">&rarr;</span>
-  </a>
-</div>
 
 <main id="main">
 
@@ -234,8 +217,7 @@
 <section class="brands section--dark" id="brands" aria-label="Brands we have worked with">
   <div class="container">
     <div class="section-head section-head--center">
-      <p class="section-label reveal"><span class="section-label__dot" aria-hidden="true"></span>Our Clients</p>
-      <h2 class="section-heading split-reveal">Brands We&rsquo;ve Worked With.</h2>
+      <h2 class="section-heading split-reveal">Our <span class="hl-red">Clients</span></h2>
     </div>
   </div>
   <div class="brandline reveal" aria-hidden="true">
@@ -289,7 +271,7 @@
       <h2 class="section-heading split-reveal" id="aboutHeading">Top-tier talent. One <span class="hl-red">high-performance</span> team.</h2>
       <p class="about__copy reveal">PER4MANCE X brings AI visuals, photography and videography, design, content, branding, web and performance marketing under one roof &mdash; one team that covers every discipline your brand needs.</p>
       <p class="about__copy reveal">The objective is simple: deliver the most advanced, innovative and up-to-date outcomes for your brand, from a single team that speaks every discipline.</p>
-      <a href="https://wa.me/61405177627?text=Hi%20PER4MANCE%20X%2C%20I%27d%20like%20to%20get%20in%20touch." target="_blank" rel="noopener" class="btn btn--ghost-light about__btn" data-magnetic>
+      <a href="https://wa.me/61405177627?text=Hi%20PER4MANCE%20X%2C%20I%27d%20like%20to%20get%20in%20touch." target="_blank" rel="noopener" class="btn btn--primary about__btn" data-magnetic>
         <span class="btn__label">Get in Touch</span>
         <span class="btn__arrow" aria-hidden="true">&rarr;</span>
       </a>
@@ -303,12 +285,8 @@
 <!-- ================================================== -->
 <section class="service-select section--dark" id="services" aria-labelledby="serviceSelectHeading">
   <div class="container">
-    <div class="section-head section-head--split">
-      <div>
-        <p class="section-label reveal"><span class="section-label__dot" aria-hidden="true"></span>Services</p>
-        <h2 class="section-heading split-reveal" id="serviceSelectHeading">Pick What You Need</h2>
-      </div>
-      <p class="section-head__note reveal">Select one or more services below, then send us your request directly on WhatsApp &mdash; no forms, no back-and-forth.</p>
+    <div class="section-head section-head--center">
+      <h2 class="section-heading split-reveal" id="serviceSelectHeading">Our <span class="hl-red">Services</span></h2>
     </div>
     <div class="service-select__grid" id="serviceGrid">
       <label class="svc-card reveal" style="--i:0">
@@ -333,17 +311,17 @@
         <span class="svc-card__cta"><span class="svc-card__check" aria-hidden="true"></span>Add to Request</span>
       </label>
       <label class="svc-card reveal" style="--i:3">
-        <input type="checkbox" name="service" value="Content Production">
+        <input type="checkbox" name="service" value="AI Automation">
         <svg class="svc-card__icon" viewBox="0 0 16 16" fill="#E31B23" shape-rendering="crispEdges" aria-hidden="true"><rect x="1" y="2" width="14" height="10"/><rect x="3" y="4" width="10" height="6" fill="#0B0B0C"/><rect x="6" y="5" width="2" height="4"/><rect x="8" y="6" width="2" height="2"/><rect x="6" y="13" width="4" height="1"/><rect x="4" y="14" width="8" height="1"/></svg>
-        <h3>Content Production</h3>
-        <p>Content planned, produced and packaged for every channel.</p>
+        <h3>AI Automation</h3>
+        <p>Smart AI workflows that automate your marketing, leads and follow-ups.</p>
         <span class="svc-card__cta"><span class="svc-card__check" aria-hidden="true"></span>Add to Request</span>
       </label>
       <label class="svc-card reveal" style="--i:4">
-        <input type="checkbox" name="service" value="Branding">
+        <input type="checkbox" name="service" value="Meta Ads">
         <svg class="svc-card__icon" viewBox="0 0 16 16" fill="#E31B23" shape-rendering="crispEdges" aria-hidden="true"><rect x="3" y="1" width="2" height="14"/><rect x="5" y="2" width="9" height="6"/><rect x="5" y="8" width="6" height="2"/></svg>
-        <h3>Branding</h3>
-        <p>Identity systems that position your brand with clarity and confidence.</p>
+        <h3>Meta Ads</h3>
+        <p>Full-funnel Facebook and Instagram campaigns built to turn scrolls into sales.</p>
         <span class="svc-card__cta"><span class="svc-card__check" aria-hidden="true"></span>Add to Request</span>
       </label>
       <label class="svc-card reveal" style="--i:5">
@@ -361,10 +339,10 @@
         <span class="svc-card__cta"><span class="svc-card__check" aria-hidden="true"></span>Add to Request</span>
       </label>
       <label class="svc-card reveal" style="--i:7">
-        <input type="checkbox" name="service" value="Performance Marketing">
+        <input type="checkbox" name="service" value="Google Ads">
         <svg class="svc-card__icon" viewBox="0 0 16 16" fill="#E31B23" shape-rendering="crispEdges" aria-hidden="true"><rect x="2" y="9" width="3" height="5"/><rect x="6" y="6" width="3" height="8"/><rect x="10" y="3" width="3" height="11"/><rect x="13" y="1" width="2" height="2"/></svg>
-        <h3>Performance Marketing</h3>
-        <p>Paid campaigns engineered around measurable outcomes.</p>
+        <h3>Google Ads</h3>
+        <p>Search, Shopping and YouTube campaigns engineered around measurable ROI.</p>
         <span class="svc-card__cta"><span class="svc-card__check" aria-hidden="true"></span>Add to Request</span>
       </label>
       <label class="svc-card reveal" style="--i:8">
@@ -395,45 +373,31 @@
 <section class="world section--deep" id="global">
   <div class="container">
     <div class="section-head section-head--center">
-      <p class="section-label reveal"><span class="section-label__dot" aria-hidden="true"></span>Global Presence</p>
-      <h2 class="section-heading split-reveal">Where We Work.</h2>
+      <h2 class="section-heading split-reveal"><span class="hl-red">Global</span> Presence</h2>
     </div>
 
-    <div class="world__map reveal" aria-label="World map showing PER4MANCE X presence in Canada, USA, UAE, India and Australia">
-      <svg viewBox="0 0 1600 700" role="img" aria-hidden="true">
-        <!-- Dotted map artwork rendered from Natural Earth country data -->
-        <image href="assets/img/world-dots.png" width="1600" height="700"/>
-        <g class="world__pin" style="--d:0" transform="translate(333,108)">
-          <g class="world__pin-inner">
-            <ellipse class="world__pin-glow" cx="0" cy="29" rx="38" ry="10"/>
-            <text class="world__pin-label" x="0" y="36">CANADA</text>
-          </g>
-        </g>
-        <g class="world__pin" style="--d:1" transform="translate(360,203)">
-          <g class="world__pin-inner">
-            <ellipse class="world__pin-glow" cx="0" cy="29" rx="38" ry="10"/>
-            <text class="world__pin-label" x="0" y="36">USA</text>
-          </g>
-        </g>
-        <g class="world__pin" style="--d:2" transform="translate(1042,275)">
-          <g class="world__pin-inner">
-            <ellipse class="world__pin-glow" cx="0" cy="29" rx="38" ry="10"/>
-            <text class="world__pin-label" x="0" y="36">UAE</text>
-          </g>
-        </g>
-        <g class="world__pin" style="--d:3" transform="translate(1147,288)">
-          <g class="world__pin-inner">
-            <ellipse class="world__pin-glow" cx="0" cy="29" rx="38" ry="10"/>
-            <text class="world__pin-label" x="0" y="36">INDIA</text>
-          </g>
-        </g>
-        <g class="world__pin" style="--d:4" transform="translate(1471,575)">
-          <g class="world__pin-inner">
-            <ellipse class="world__pin-glow" cx="0" cy="29" rx="38" ry="10"/>
-            <text class="world__pin-label" x="0" y="36">AUSTRALIA</text>
-          </g>
-        </g>
-      </svg>
+    <!-- Dotted country maps rendered from Natural Earth data (assets/img/map-*.png) -->
+    <div class="countries reveal" role="img" aria-label="PER4MANCE X works across Canada, India, USA, Australia and UAE">
+      <figure class="country" style="--d:0">
+        <img src="assets/img/map-canada.png" alt="" loading="lazy" width="548" height="559">
+        <figcaption class="country__name">CANADA</figcaption>
+      </figure>
+      <figure class="country" style="--d:1">
+        <img src="assets/img/map-india.png" alt="" loading="lazy" width="526" height="559">
+        <figcaption class="country__name">INDIA</figcaption>
+      </figure>
+      <figure class="country" style="--d:2">
+        <img src="assets/img/map-usa.png" alt="" loading="lazy" width="1032" height="559">
+        <figcaption class="country__name">USA</figcaption>
+      </figure>
+      <figure class="country" style="--d:3">
+        <img src="assets/img/map-australia.png" alt="" loading="lazy" width="603" height="548">
+        <figcaption class="country__name">AUSTRALIA</figcaption>
+      </figure>
+      <figure class="country" style="--d:4">
+        <img src="assets/img/map-uae.png" alt="" loading="lazy" width="713" height="559">
+        <figcaption class="country__name">UAE</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -445,53 +409,77 @@
 <section class="process section--dark" id="approach">
   <div class="container">
     <div class="section-head section-head--center">
-      <p class="section-label reveal"><span class="section-label__dot" aria-hidden="true"></span>Our Process</p>
-      <h2 class="section-heading split-reveal">A Clear System From Brief to Results.</h2>
+      <h2 class="section-heading split-reveal">Our <span class="hl-red">Process</span></h2>
     </div>
 
-    <div class="process__line" aria-hidden="true"><span id="processProgress"></span></div>
-
-    <ol class="process__grid" role="list">
-      <li class="process-card reveal" style="--i:0">
-        <span class="process-card__num">01</span>
-        <h3 class="process-card__title">Discover and Position</h3>
-        <p class="process-card__copy">We understand your brand, audience, offer and commercial objective before building anything.</p>
-        <ul class="process-card__list" role="list">
-          <li>Discovery</li>
-          <li>Audience research</li>
-          <li>Positioning</li>
-          <li>Campaign roadmap</li>
-        </ul>
+    <!-- Steps light up in brand red one by one as you scroll -->
+    <ol class="steps" id="processSteps" role="list">
+      <li class="step reveal" style="--i:0">
+        <span class="step__num" aria-hidden="true">01</span>
+        <h3 class="step__title">Discover</h3>
       </li>
-      <li class="process-card reveal" style="--i:1">
-        <span class="process-card__num">02</span>
-        <h3 class="process-card__title">Create and Launch</h3>
-        <p class="process-card__copy">We develop the creative, content and media structure required to launch with clarity.</p>
-        <ul class="process-card__list" role="list">
-          <li>Campaign concepts</li>
-          <li>Creative assets</li>
-          <li>Production and setup</li>
-          <li>Web and landing pages</li>
-        </ul>
+      <li class="steps__link" aria-hidden="true"></li>
+      <li class="step reveal" style="--i:1">
+        <span class="step__num" aria-hidden="true">02</span>
+        <h3 class="step__title">Launch</h3>
       </li>
-      <li class="process-card reveal" style="--i:2">
-        <span class="process-card__num">03</span>
-        <h3 class="process-card__title">Optimise and Scale</h3>
-        <p class="process-card__copy">We review performance, test new angles and optimise towards stronger outcomes.</p>
-        <ul class="process-card__list" role="list">
-          <li>Creative testing</li>
-          <li>Media optimisation</li>
-          <li>Quality review</li>
-          <li>Performance reporting</li>
-        </ul>
+      <li class="steps__link" aria-hidden="true"></li>
+      <li class="step reveal" style="--i:2">
+        <span class="step__num" aria-hidden="true">03</span>
+        <h3 class="step__title">Scale</h3>
       </li>
     </ol>
   </div>
 </section>
 
 
+<!-- ================================================== -->
+<!-- SECTION 7: TESTIMONIALS — dark editorial cards with a
+     travelling performance-energy light behind them.
+     Edit the quotes in the TESTI_CARDS array in assets/js/main.js. -->
+<!-- ================================================== -->
+<section class="testi" id="testimonials" aria-labelledby="testiHeading">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <h2 class="section-heading split-reveal" id="testiHeading">What Clients <span class="hl-red">Say</span></h2>
+    </div>
+  </div>
+  <div class="testi__wrap">
+    <div class="testi__row" id="testiRow"></div>
+  </div>
+</section>
 
 
+<!-- ================================================== -->
+<!-- SECTION 8: AWARDS & PARTNERS — badge strip.
+     Upload the badge images to assets/awards/ with these
+     exact names: google-partner.png, meta-ads.png,
+     shopify-partners.png, top20-2020.png, top5-2024.png -->
+<!-- ================================================== -->
+<section class="awards section--dark" id="awards" aria-labelledby="awardsHeading">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <h2 class="section-heading split-reveal" id="awardsHeading">Awards &amp; <span class="hl-red">Recognition</span></h2>
+    </div>
+    <div class="awards__row">
+      <figure class="award reveal" style="--i:0">
+        <img src="assets/awards/google-partner.png" alt="Google Partner" loading="lazy">
+      </figure>
+      <figure class="award reveal" style="--i:1">
+        <img src="assets/awards/meta-ads.png" alt="Meta Ads" loading="lazy">
+      </figure>
+      <figure class="award reveal" style="--i:2">
+        <img src="assets/awards/shopify-partners.png" alt="Shopify Partners" loading="lazy">
+      </figure>
+      <figure class="award reveal" style="--i:3">
+        <img src="assets/awards/top20-2020.png" alt="Top 20 Marketing Agency 2020" loading="lazy">
+      </figure>
+      <figure class="award reveal" style="--i:4">
+        <img src="assets/awards/top5-2024.png" alt="Top 5 Marketing Agency 2024" loading="lazy">
+      </figure>
+    </div>
+  </div>
+</section>
 
 
 <!-- ================================================== -->
@@ -502,7 +490,7 @@
     <svg viewBox="0 0 100 100"><use href="#blade"/></svg>
   </span>
   <div class="container">
-    <h2 class="section-heading section-heading--xl split-reveal">Ready to Move Your Brand Forward?</h2>
+    <h2 class="section-heading section-heading--xl split-reveal">Ready to Move Your <span class="hl-red">Brand</span> Forward?</h2>
     <p class="final-cta__copy reveal">Build a system that connects the right audience, stronger creative and meaningful action.</p>
     <div class="final-cta__btns reveal">
       <a href="https://wa.me/61405177627?text=Hi%20PER4MANCE%20X%2C%20I%27d%20like%20to%20book%20a%20discovery%20call." target="_blank" rel="noopener" class="btn btn--primary" data-magnetic>
@@ -556,9 +544,9 @@
         <ul role="list">
           <li><a href="#services">AI Visuals</a></li>
           <li><a href="#services">Photography and Videography</a></li>
-          <li><a href="#services">Branding &amp; Design</a></li>
+          <li><a href="#services">Meta Ads &amp; Google Ads</a></li>
           <li><a href="#services">Web Design &amp; SEO</a></li>
-          <li><a href="#services">Performance &amp; Social Marketing</a></li>
+          <li><a href="#services">Social Media Marketing</a></li>
         </ul>
       </nav>
       <div class="footer__col">
